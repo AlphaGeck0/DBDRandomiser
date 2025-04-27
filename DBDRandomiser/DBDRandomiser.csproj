@@ -7,6 +7,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <UseWPF>true</UseWPF>
     <ApplicationIcon>Icons\dbd_rando.ico</ApplicationIcon>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
   </PropertyGroup>
 
   <ItemGroup>
@@ -57,7 +58,6 @@
     <None Remove="perk_images\All-Shaking_Thunder.png" />
     <None Remove="perk_images\Awakened_Awareness.png" />
     <None Remove="perk_images\A_Nurse%27s_Calling.png" />
-    <None Remove="perk_images\A_Nurses%27s_Calling.png" />
     <None Remove="perk_images\Bamboozle.png" />
     <None Remove="perk_images\Barbecue_&amp;_Chilli.png" />
     <None Remove="perk_images\Batteries_Included.png" />
@@ -91,9 +91,7 @@
     <None Remove="perk_images\Forced_Hesitation.png" />
     <None Remove="perk_images\Forced_Penance.png" />
     <None Remove="perk_images\Forever_Entwined.png" />
-    <None Remove="perk_images\Franklin%27s_Demise.png" />
     <None Remove="perk_images\Franklins_Demise.png" />
-    <None Remove="perk_images\Friends_%27til_the_End.png" />
     <None Remove="perk_images\Friends_til_the_End.png" />
     <None Remove="perk_images\Furtive_Chase.png" />
     <None Remove="perk_images\Game_Afoot.png" />
@@ -126,11 +124,9 @@
     <None Remove="perk_images\Insidious.png" />
     <None Remove="perk_images\Iron_Grasp.png" />
     <None Remove="perk_images\Iron_Maiden.png" />
-    <None Remove="perk_images\Knockout.png" />
     <None Remove="perk_images\Knock_Out.png" />
     <None Remove="perk_images\Languid_Touch.png" />
     <None Remove="perk_images\Lethal_Pursuer.png" />
-    <None Remove="perk_images\Leverage,png.png" />
     <None Remove="perk_images\Leverage.png" />
     <None Remove="perk_images\Lightborn.png" />
     <None Remove="perk_images\Machine_Learning.png" />
@@ -185,9 +181,9 @@
     <None Remove="perk_images\Unnerving_Presence.png" />
     <None Remove="perk_images\Unrelenting.png" />
     <None Remove="perk_images\Weave_Attunement.png" />
-    <None Remove="perk_images\Weave_Attunment.png" />
     <None Remove="perk_images\Whispers.png" />
     <None Remove="perk_images\Zanshin_Tactics.png" />
+    <!-- Other <None Remove="..."> entries -->
   </ItemGroup>
 
   <ItemGroup>
@@ -195,180 +191,523 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="background_image\dbd_background.png" />
+    <Resource Include="background_image\dbd_background.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Icons\dbd_rando.ico">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Icons\Skull.png" />
-    <Resource Include="killer_images\the_artist.png" />
-    <Resource Include="killer_images\the_blight.png" />
-    <Resource Include="killer_images\the_cannibal.png" />
-    <Resource Include="killer_images\the_cenobite.png" />
-    <Resource Include="killer_images\the_clown.png" />
-    <Resource Include="killer_images\the_dark_lord.png" />
-    <Resource Include="killer_images\the_deathslinger.png" />
-    <Resource Include="killer_images\the_demogorgon.png" />
-    <Resource Include="killer_images\the_doctor.png" />
-    <Resource Include="killer_images\the_dredge.png" />
-    <Resource Include="killer_images\the_executioner.png" />
-    <Resource Include="killer_images\the_ghost_face.png" />
-    <Resource Include="killer_images\the_ghoul.png" />
-    <Resource Include="killer_images\the_good_guy.png" />
-    <Resource Include="killer_images\the_hag.png" />
-    <Resource Include="killer_images\the_hillbilly.png" />
-    <Resource Include="killer_images\the_houndmaster.png" />
-    <Resource Include="killer_images\the_huntress.png" />
-    <Resource Include="killer_images\the_knight.png" />
-    <Resource Include="killer_images\the_legion.png" />
-    <Resource Include="killer_images\the_lich.png" />
-    <Resource Include="killer_images\the_mastermind.png" />
-    <Resource Include="killer_images\the_nemesis.png" />
-    <Resource Include="killer_images\the_nightmare.png" />
-    <Resource Include="killer_images\the_nurse.png" />
-    <Resource Include="killer_images\the_oni.png" />
-    <Resource Include="killer_images\the_onryo.png" />
-    <Resource Include="killer_images\the_pig.png" />
-    <Resource Include="killer_images\the_plague.png" />
-    <Resource Include="killer_images\the_shape.png" />
-    <Resource Include="killer_images\the_singularity.png" />
-    <Resource Include="killer_images\the_skull_merchant.png" />
-    <Resource Include="killer_images\the_spirit.png" />
-    <Resource Include="killer_images\the_trapper.png" />
-    <Resource Include="killer_images\the_trickster.png" />
-    <Resource Include="killer_images\the_twins.png" />
-    <Resource Include="killer_images\the_unknown.png" />
-    <Resource Include="killer_images\the_wraith.png" />
-    <Resource Include="killer_images\the_xenomorph.png" />
-    <Resource Include="perk_images\Agitation.png" />
-    <Resource Include="perk_images\Alien_Instinct.png" />
-    <Resource Include="perk_images\All-Shaking_Thunder.png" />
-    <Resource Include="perk_images\Awakened_Awareness.png" />
-    <Resource Include="perk_images\A_Nurse's_Calling.png" />
-    <Resource Include="perk_images\Bamboozle.png" />
-    <Resource Include="perk_images\Barbecue_&amp;_Chilli.png" />
-    <Resource Include="perk_images\Batteries_Included.png" />
-    <Resource Include="perk_images\Beast_of_Prey.png" />
-    <Resource Include="perk_images\Bitter_Murmur.png" />
-    <Resource Include="perk_images\Bloodhound.png" />
-    <Resource Include="perk_images\Blood_Echo.png" />
-    <Resource Include="perk_images\Blood_Warden.png" />
-    <Resource Include="perk_images\Brutal_Strength.png" />
-    <Resource Include="perk_images\Call_of_Brine.png" />
-    <Resource Include="perk_images\Corrupt_Intervention.png" />
-    <Resource Include="perk_images\Coulrophobia.png" />
-    <Resource Include="perk_images\Coup_de_Grace.png" />
-    <Resource Include="perk_images\Cruel_Limits.png" />
-    <Resource Include="perk_images\Darkness_Revealed.png" />
-    <Resource Include="perk_images\Dark_Arrogance.png" />
-    <Resource Include="perk_images\Dark_Devotion.png" />
-    <Resource Include="perk_images\Deadlock.png" />
-    <Resource Include="perk_images\Dead_Man's_Switch.png" />
-    <Resource Include="perk_images\Deathbound.png" />
-    <Resource Include="perk_images\Deerstalker.png" />
-    <Resource Include="perk_images\Discordance.png" />
-    <Resource Include="perk_images\Dissolution.png" />
-    <Resource Include="perk_images\Distressing.png" />
-    <Resource Include="perk_images\Dominance.png" />
-    <Resource Include="perk_images\Dragon's_Grip.png" />
-    <Resource Include="perk_images\Dying_Light.png" />
-    <Resource Include="perk_images\Enduring.png" />
-    <Resource Include="perk_images\Eruption.png" />
-    <Resource Include="perk_images\Fire_Up.png" />
-    <Resource Include="perk_images\Forced_Hesitation.png" />
-    <Resource Include="perk_images\Forced_Penance.png" />
-    <Resource Include="perk_images\Forever_Entwined.png" />
-    <Resource Include="perk_images\Franklins_Demise.png" />
-    <Resource Include="perk_images\Friends_til_the_End.png" />
-    <Resource Include="perk_images\Furtive_Chase.png" />
-    <Resource Include="perk_images\Game_Afoot.png" />
-    <Resource Include="perk_images\Gearhead.png" />
-    <Resource Include="perk_images\Genetic_Limits.png" />
-    <Resource Include="perk_images\Grim_Embrace.png" />
-    <Resource Include="perk_images\Hex_Blood_Favor.png" />
-    <Resource Include="perk_images\Hex_Crowd_Control.png" />
-    <Resource Include="perk_images\Hex_Devour_Hope.png" />
-    <Resource Include="perk_images\Hex_Face_the_Darkness.png" />
-    <Resource Include="perk_images\Hex_Haunted_Ground.png" />
-    <Resource Include="perk_images\Hex_Huntress_Lullaby.png" />
-    <Resource Include="perk_images\Hex_Nothing_but_Misery.png" />
-    <Resource Include="perk_images\Hex_No_One_Escapes_Death.png" />
-    <Resource Include="perk_images\Hex_Pentimento.png" />
-    <Resource Include="perk_images\Hex_Plaything.png" />
-    <Resource Include="perk_images\Hex_Retribution.png" />
-    <Resource Include="perk_images\Hex_Ruin.png" />
-    <Resource Include="perk_images\Hex_The_Third_Seal.png" />
-    <Resource Include="perk_images\Hex_Thrill_of_the_Hunt.png" />
-    <Resource Include="perk_images\Hex_Two_Can_Play.png" />
-    <Resource Include="perk_images\Hex_Undying.png" />
-    <Resource Include="perk_images\Hex_Wretched_Fate.png" />
-    <Resource Include="perk_images\Hoarder.png" />
-    <Resource Include="perk_images\Hubris.png" />
-    <Resource Include="perk_images\Human_Greed.png" />
-    <Resource Include="perk_images\Hysteria.png" />
-    <Resource Include="perk_images\I'm_All_Ears.png" />
-    <Resource Include="perk_images\Infectious_Fright.png" />
-    <Resource Include="perk_images\Insidious.png" />
-    <Resource Include="perk_images\Iron_Grasp.png" />
-    <Resource Include="perk_images\Iron_Maiden.png" />
-    <Resource Include="perk_images\Knock_Out.png" />
-    <Resource Include="perk_images\Languid_Touch.png" />
-    <Resource Include="perk_images\Lethal_Pursuer.png" />
-    <Resource Include="perk_images\Leverage.png" />
-    <Resource Include="perk_images\Lightborn.png" />
-    <Resource Include="perk_images\Machine_Learning.png" />
-    <Resource Include="perk_images\Mad_Grit.png" />
-    <Resource Include="perk_images\Make_Your_Choice.png" />
-    <Resource Include="perk_images\Merciless_Storm.png" />
-    <Resource Include="perk_images\Mindbreaker.png" />
-    <Resource Include="perk_images\Monitor_&amp;_Abuse.png" />
-    <Resource Include="perk_images\Nemesis.png" />
-    <Resource Include="perk_images\None_are_Free.png" />
-    <Resource Include="perk_images\Nowhere_to_Hide.png" />
-    <Resource Include="perk_images\No_Quarter.png" />
-    <Resource Include="perk_images\No_Way_Out.png" />
-    <Resource Include="perk_images\Oppression.png" />
-    <Resource Include="perk_images\Overcharge.png" />
-    <Resource Include="perk_images\Overwhelming_Presence.png" />
-    <Resource Include="perk_images\Play_with_Your_Food.png" />
-    <Resource Include="perk_images\Pop_Goes_the_Weasel.png" />
-    <Resource Include="perk_images\Predator.png" />
-    <Resource Include="perk_images\Rancor.png" />
-    <Resource Include="perk_images\Rapid_Brutality.png" />
-    <Resource Include="perk_images\Remember_Me.png" />
-    <Resource Include="perk_images\Save_the_Best_for_Last.png" />
-    <Resource Include="perk_images\Scourge_Hook_Floods_of_Rage.png" />
-    <Resource Include="perk_images\Scourge_Hook_Gift_of_Pain.png" />
-    <Resource Include="perk_images\Scourge_Hook_Hangman's_Trick.png" />
-    <Resource Include="perk_images\Scourge_Hook_Jagged_Compass.png" />
-    <Resource Include="perk_images\Scourge_Hook_Monstrous_Shrine.png" />
-    <Resource Include="perk_images\Scourge_Hook_Pain_Resonance.png" />
-    <Resource Include="perk_images\Septic_Touch.png" />
-    <Resource Include="perk_images\Shadowborn.png" />
-    <Resource Include="perk_images\Shattered_Hope.png" />
-    <Resource Include="perk_images\Sloppy_Butcher.png" />
-    <Resource Include="perk_images\Spies_from_the_Shadows.png" />
-    <Resource Include="perk_images\Spirit_Fury.png" />
-    <Resource Include="perk_images\Starstruck.png" />
-    <Resource Include="perk_images\Stridor.png" />
-    <Resource Include="perk_images\Superior_Anatomy.png" />
-    <Resource Include="perk_images\Surge.png" />
-    <Resource Include="perk_images\Surveillance.png" />
-    <Resource Include="perk_images\Terminus.png" />
-    <Resource Include="perk_images\Territorial_Imperative.png" />
-    <Resource Include="perk_images\Thanatophobia.png" />
-    <Resource Include="perk_images\Thrilling_Tremors.png" />
-    <Resource Include="perk_images\THWACK!.png" />
-    <Resource Include="perk_images\Tinkerer.png" />
-    <Resource Include="perk_images\Trail_of_Torment.png" />
-    <Resource Include="perk_images\Ultimate_Weapon.png" />
-    <Resource Include="perk_images\Unbound.png" />
-    <Resource Include="perk_images\Undone.png" />
-    <Resource Include="perk_images\Unforeseen.png" />
-    <Resource Include="perk_images\Unnerving_Presence.png" />
-    <Resource Include="perk_images\Unrelenting.png" />
-    <Resource Include="perk_images\Weave_Attunement.png" />
-    <Resource Include="perk_images\Whispers.png" />
-    <Resource Include="perk_images\Zanshin_Tactics.png" />
+    <Resource Include="Icons\Skull.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="killer_images\the_artist.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="killer_images\the_blight.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="killer_images\the_cannibal.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="killer_images\the_cenobite.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="killer_images\the_clown.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="killer_images\the_dark_lord.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="killer_images\the_deathslinger.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="killer_images\the_demogorgon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="killer_images\the_doctor.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="killer_images\the_dredge.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="killer_images\the_executioner.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="killer_images\the_ghost_face.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="killer_images\the_ghoul.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="killer_images\the_good_guy.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="killer_images\the_hag.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="killer_images\the_hillbilly.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="killer_images\the_houndmaster.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="killer_images\the_huntress.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="killer_images\the_knight.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="killer_images\the_legion.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="killer_images\the_lich.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="killer_images\the_mastermind.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="killer_images\the_nemesis.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="killer_images\the_nightmare.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="killer_images\the_nurse.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="killer_images\the_oni.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="killer_images\the_onryo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="killer_images\the_pig.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="killer_images\the_plague.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="killer_images\the_shape.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="killer_images\the_singularity.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="killer_images\the_skull_merchant.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="killer_images\the_spirit.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="killer_images\the_trapper.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="killer_images\the_trickster.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="killer_images\the_twins.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="killer_images\the_unknown.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="killer_images\the_wraith.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="killer_images\the_xenomorph.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Agitation.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Alien_Instinct.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\All-Shaking_Thunder.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Awakened_Awareness.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\A_Nurse's_Calling.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Bamboozle.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Barbecue_&amp;_Chilli.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Batteries_Included.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Beast_of_Prey.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Bitter_Murmur.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Bloodhound.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Blood_Echo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Blood_Warden.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Brutal_Strength.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Call_of_Brine.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Corrupt_Intervention.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Coulrophobia.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Coup_de_Grace.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Cruel_Limits.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Darkness_Revealed.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Dark_Arrogance.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Dark_Devotion.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Deadlock.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Dead_Man's_Switch.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Deathbound.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Deerstalker.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Discordance.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Dissolution.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Distressing.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Dominance.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Dragon's_Grip.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Dying_Light.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Enduring.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Eruption.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Fire_Up.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Forced_Hesitation.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Forced_Penance.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Forever_Entwined.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Franklins_Demise.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Friends_til_the_End.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Furtive_Chase.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Game_Afoot.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Gearhead.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Genetic_Limits.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Grim_Embrace.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Hex_Blood_Favor.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Hex_Crowd_Control.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Hex_Devour_Hope.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Hex_Face_the_Darkness.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Hex_Haunted_Ground.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Hex_Huntress_Lullaby.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Hex_Nothing_but_Misery.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Hex_No_One_Escapes_Death.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Hex_Pentimento.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Hex_Plaything.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Hex_Retribution.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Hex_Ruin.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Hex_The_Third_Seal.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Hex_Thrill_of_the_Hunt.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Hex_Two_Can_Play.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Hex_Undying.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Hex_Wretched_Fate.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Hoarder.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Hubris.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Human_Greed.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Hysteria.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\I'm_All_Ears.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Infectious_Fright.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Insidious.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Iron_Grasp.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Iron_Maiden.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Knock_Out.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Languid_Touch.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Lethal_Pursuer.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Leverage.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Lightborn.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Machine_Learning.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Mad_Grit.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Make_Your_Choice.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Merciless_Storm.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Mindbreaker.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Monitor_&amp;_Abuse.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Nemesis.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\None_are_Free.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Nowhere_to_Hide.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\No_Quarter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\No_Way_Out.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Oppression.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Overcharge.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Overwhelming_Presence.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Play_with_Your_Food.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Pop_Goes_the_Weasel.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Predator.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Rancor.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Rapid_Brutality.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Remember_Me.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Save_the_Best_for_Last.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Scourge_Hook_Floods_of_Rage.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Scourge_Hook_Gift_of_Pain.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Scourge_Hook_Hangman's_Trick.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Scourge_Hook_Jagged_Compass.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Scourge_Hook_Monstrous_Shrine.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Scourge_Hook_Pain_Resonance.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Septic_Touch.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Shadowborn.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Shattered_Hope.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Sloppy_Butcher.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Spies_from_the_Shadows.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Spirit_Fury.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Starstruck.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Stridor.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Superior_Anatomy.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Surge.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Surveillance.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Terminus.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Territorial_Imperative.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Thanatophobia.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Thrilling_Tremors.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\THWACK!.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Tinkerer.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Trail_of_Torment.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Ultimate_Weapon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Unbound.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Undone.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Unforeseen.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Unnerving_Presence.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Unrelenting.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Weave_Attunement.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Whispers.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\Zanshin_Tactics.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <!-- Other <Resource Include="..."> entries -->
   </ItemGroup>
 
 </Project>

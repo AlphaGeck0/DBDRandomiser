@@ -9,6 +9,18 @@
     <ApplicationIcon>Icons\dbd_rando.ico</ApplicationIcon>
     <RuntimeIdentifier>win-x64</RuntimeIdentifier>
   </PropertyGroup>
+  
+  <ItemGroup>
+  <Content Include="background_image\**\*">
+    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+  </Content>
+  <Content Include="killer_images\**\*">
+    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+  </Content>
+  <Content Include="perk_images\**\*">
+    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+  </Content>
+</ItemGroup>
 
   <ItemGroup>
     <None Remove="background_image\dbd_background.png" />
@@ -184,10 +196,6 @@
     <None Remove="perk_images\Whispers.png" />
     <None Remove="perk_images\Zanshin_Tactics.png" />
     <!-- Other <None Remove="..."> entries -->
-  </ItemGroup>
-
-  <ItemGroup>
-    <Content Include="Icons\dbd_rando.ico" />
   </ItemGroup>
 
   <ItemGroup>

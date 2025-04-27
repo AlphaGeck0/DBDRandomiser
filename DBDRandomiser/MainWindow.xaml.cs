@@ -289,6 +289,11 @@ namespace DBDKillerSelector
         public MainWindow()
         {
             InitializeComponent();
+
+            // Ensure the window is visible
+            this.Visibility = Visibility.Visible;
+            this.WindowState = WindowState.Normal;
+            this.Activate();
         }
 
         private void SelectKiller_Click(object sender, RoutedEventArgs e)

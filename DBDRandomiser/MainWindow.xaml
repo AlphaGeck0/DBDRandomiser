@@ -25,7 +25,7 @@
                  HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,100,0,0" Opacity="0"/>
 
       <!-- Killer Image (Centered) -->
-      <Image Name="KillerImage" HorizontalAlignment="Center" VerticalAlignment="Center" Height="300" Opacity="0"/>
+      <Image Name="KillerImage" HorizontalAlignment="Center" VerticalAlignment="Center" Height="400" Opacity="0"/>
 
       <!-- Perks Container (Moved Below Killer Image) -->
       <UniformGrid Name="PerksContainer"

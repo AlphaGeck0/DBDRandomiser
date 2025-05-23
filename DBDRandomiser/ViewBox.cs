@@ -1,6 +1,6 @@
 ﻿using System.Windows.Controls;
 
-namespace DBDKillerSelector
+namespace DBDRandomiser
 {
     internal class ViewBox
     {

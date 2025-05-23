@@ -1,53 +1,51 @@
-﻿<Window x:Class="DBDKillerSelector.MainWindow"
+﻿<Window
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:av="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="av" x:Class="DBDRandomiser.MainWindow"
       Title="DBD Killer Selector"
       Height="800" Width="800"
       WindowStyle="None" ResizeMode="NoResize"
       Background="Black"
       MouseDown="MainWindow_MouseDown"
       Icon="/Icons/dbd_rando.ico">
-    <Window.Resources>
-      <Storyboard x:Key="FadeInStoryboard">
-          <DoubleAnimation Duration="0:0:0.5" From="0.0" To="1.0" Storyboard.TargetProperty="Opacity"/>
-      </Storyboard>
-      <Storyboard x:Key="FadeOutStoryboard">
-          <DoubleAnimation Duration="0:0:0.5" From="1.0" To="0.0" Storyboard.TargetProperty="Opacity"/>
-      </Storyboard>
-  </Window.Resources>
+	<Window.Resources>
+		<Storyboard x:Key="FadeInStoryboard">
+			<DoubleAnimation Duration="0:0:0.5" From="0.0" To="1.0" Storyboard.TargetProperty="Opacity"/>
+		</Storyboard>
+		<Storyboard x:Key="FadeOutStoryboard">
+			<DoubleAnimation Duration="0:0:0.5" From="1.0" To="0.0" Storyboard.TargetProperty="Opacity"/>
+		</Storyboard>
+	</Window.Resources>
 
-  <Grid>
-      <!-- Background Image -->
-      <Image Source="/background_image/dbd_background.png" Stretch="Fill"/>
+	<Grid>
+		<!-- Background Image -->
+		<Image x:Name="background_image" Source="/background_image/dbd_background.png" Stretch="Fill"/>
 
-      <!-- Killer Name (Lowered & Enlarged) -->
-      <TextBlock Name="KillerName" Foreground="Red" FontSize="46"
-                 HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,100,0,0" Opacity="0"/>
+		<!-- Background Image -->
+		<Image x:Name="background_image2" Source="/background_image/dbd_background2.png" Stretch="Fill" Opacity="0"/>
 
-      <!-- Killer Image (Centered) -->
-      <Image Name="KillerImage" HorizontalAlignment="Center" VerticalAlignment="Center" Height="400" Opacity="0"/>
+		<!-- Killer Name (Lowered & Enlarged) -->
+		<TextBlock x:Name="CharacterName" Foreground="Red" FontSize="44"
+                 HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,150,0,0" Opacity="0" Panel.ZIndex="99"/>
 
-      <!-- Perks Container (Moved Below Killer Image) -->
-      <UniformGrid Name="PerksContainer"
-                 HorizontalAlignment="Center"
-                 VerticalAlignment="Bottom"
-                 Margin="0,20,0,100"
-                 Width="800"
-                 Rows="1"
-                 Columns="4"
-                 Opacity="0">
-      </UniformGrid>
+		<!-- Killer Image (Centered) -->
+		<Image x:Name="CharacterImage" HorizontalAlignment="Center" VerticalAlignment="Center" Height="400" Opacity="0"/>
 
-      <!-- Buttons (Placed at Bottom) -->
-      <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom">
-          <Button Content="Select Random Killer" Click="SelectKiller_Click" Width="200" Background="#222222" Foreground="White" FontWeight="Bold"/>
-          <Button Content="Reset" Click="ResetScreen_Click" Width="100" Background="#AAAAAA" Foreground="Black" FontWeight="Bold"/>
-          <Button Width="100" Click="CloseApp_Click" Background="DarkRed" BorderBrush="Crimson" BorderThickness="2">
-              <StackPanel Orientation="Horizontal">
-                  <Image Source="/icons/Skull.png" Width="20" Height="20" />
-                  <TextBlock Text="Close App" Foreground="White" FontWeight="Bold" Margin="5,0,0,0"/>
-              </StackPanel>
-          </Button>
-      </StackPanel>
-  </Grid>
+		<!-- Perks Container (Moved Below Killer Image) -->
+		<UniformGrid x:Name="PerksContainer"  Margin="0,590,0,90" Width="800" Rows="1" Columns="4" Opacity="0" RenderTransformOrigin="0.499,0.383" />
+
+		<Button Width="100" Click="CloseApp_Click" Background="DarkRed" BorderBrush="Crimson" BorderThickness="2" Margin="700,0,0,770" Height="30">
+			<StackPanel Orientation="Horizontal">
+				<Image Source="/icons/Skull.png" Width="20" Height="20" />
+				<TextBlock Text="Close App" Foreground="White" FontWeight="Bold" Margin="5,0,0,0"/>
+			</StackPanel>
+		</Button>
+
+		<!-- Buttons (Placed at Bottom) -->
+		<StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom">
+			<Button Content="Select Random Killer" Click="SelectKiller_Click" Width="200" Background="OrangeRed" Foreground="White" FontWeight="Bold"/>
+			<Button Content="Reset" Click="ResetScreen_Click" Width="100" Background="#AAAAAA" Foreground="Black" FontWeight="Bold"/>
+			<Button Content="Select Random Survivor" Click="SelectSurvivor_Click" Width="200" Background="CornflowerBlue" Foreground="White" FontWeight="Bold"/>
+		</StackPanel>
+	</Grid>
 </Window>

@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Globalization;
+using System.Text;
 using System.Windows;
 using System.Windows.Media.Imaging;
 using System.IO;
@@ -34,6 +36,18 @@ namespace DBDRandomiser
             this.Visibility = Visibility.Visible;
             this.WindowState = WindowState.Normal;
             this.Activate();
+        }
+
+        private static string RemoveDiacritics(string text)
+        {
+            var normalized = text.Normalize(NormalizationForm.FormD);
+            var sb = new StringBuilder();
+            foreach (var c in normalized)
+            {
+                if (CharUnicodeInfo.GetUnicodeCategory(c) != UnicodeCategory.NonSpacingMark)
+                    sb.Append(c);
+            }
+            return sb.ToString().Normalize(NormalizationForm.FormC);
         }
 
         private void SelectKiller_Click(object sender, RoutedEventArgs e)
@@ -257,7 +271,8 @@ namespace DBDRandomiser
             CharacterName.Opacity = 1; // Ensure the label is visible
 
             // Load the survivor image dynamically
-            string CharacterImageUri = $"pack://application:,,,/survivor_images/{selectedSurvivor.Replace(" ", "_").ToLower()}.png";
+            string fileName = RemoveDiacritics(selectedSurvivor).Replace(" ", "_").ToLower() + ".png";
+            string CharacterImageUri = $"pack://application:,,,/survivor_images/{fileName}";
             try
             {
                 CharacterImage.Source = new BitmapImage(new Uri(CharacterImageUri, UriKind.Absolute));

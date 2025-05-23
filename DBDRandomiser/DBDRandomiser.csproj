@@ -136,6 +136,136 @@
     <Content Remove="perk_images\Insidious.png" />
     <Content Remove="perk_images\Iron_Grasp.png" />
     <Content Remove="perk_images\Iron_Maiden.png" />
+    <Content Remove="perk_images\killer_perks\Agitation.png" />
+    <Content Remove="perk_images\killer_perks\Alien_Instinct.png" />
+    <Content Remove="perk_images\killer_perks\All-Shaking_Thunder.png" />
+    <Content Remove="perk_images\killer_perks\Awakened_Awareness.png" />
+    <Content Remove="perk_images\killer_perks\A_Nurse%27s_Calling.png" />
+    <Content Remove="perk_images\killer_perks\Bamboozle.png" />
+    <Content Remove="perk_images\killer_perks\Barbecue_&amp;_Chilli.png" />
+    <Content Remove="perk_images\killer_perks\Batteries_Included.png" />
+    <Content Remove="perk_images\killer_perks\Beast_of_Prey.png" />
+    <Content Remove="perk_images\killer_perks\Bitter_Murmur.png" />
+    <Content Remove="perk_images\killer_perks\Bloodhound.png" />
+    <Content Remove="perk_images\killer_perks\Blood_Echo.png" />
+    <Content Remove="perk_images\killer_perks\Blood_Warden.png" />
+    <Content Remove="perk_images\killer_perks\Brutal_Strength.png" />
+    <Content Remove="perk_images\killer_perks\Call_of_Brine.png" />
+    <Content Remove="perk_images\killer_perks\Corrupt_Intervention.png" />
+    <Content Remove="perk_images\killer_perks\Coulrophobia.png" />
+    <Content Remove="perk_images\killer_perks\Coup_de_Grace.png" />
+    <Content Remove="perk_images\killer_perks\Cruel_Limits.png" />
+    <Content Remove="perk_images\killer_perks\Darkness_Revealed.png" />
+    <Content Remove="perk_images\killer_perks\Dark_Arrogance.png" />
+    <Content Remove="perk_images\killer_perks\Dark_Devotion.png" />
+    <Content Remove="perk_images\killer_perks\Deadlock.png" />
+    <Content Remove="perk_images\killer_perks\Dead_Man%27s_Switch.png" />
+    <Content Remove="perk_images\killer_perks\Deathbound.png" />
+    <Content Remove="perk_images\killer_perks\Deerstalker.png" />
+    <Content Remove="perk_images\killer_perks\Discordance.png" />
+    <Content Remove="perk_images\killer_perks\Dissolution.png" />
+    <Content Remove="perk_images\killer_perks\Distressing.png" />
+    <Content Remove="perk_images\killer_perks\Dominance.png" />
+    <Content Remove="perk_images\killer_perks\Dragon%27s_Grip.png" />
+    <Content Remove="perk_images\killer_perks\Dying_Light.png" />
+    <Content Remove="perk_images\killer_perks\Enduring.png" />
+    <Content Remove="perk_images\killer_perks\Eruption.png" />
+    <Content Remove="perk_images\killer_perks\Fire_Up.png" />
+    <Content Remove="perk_images\killer_perks\Forced_Hesitation.png" />
+    <Content Remove="perk_images\killer_perks\Forced_Penance.png" />
+    <Content Remove="perk_images\killer_perks\Forever_Entwined.png" />
+    <Content Remove="perk_images\killer_perks\Franklins_Demise.png" />
+    <Content Remove="perk_images\killer_perks\Friends_til_the_End.png" />
+    <Content Remove="perk_images\killer_perks\Furtive_Chase.png" />
+    <Content Remove="perk_images\killer_perks\Game_Afoot.png" />
+    <Content Remove="perk_images\killer_perks\Gearhead.png" />
+    <Content Remove="perk_images\killer_perks\Genetic_Limits.png" />
+    <Content Remove="perk_images\killer_perks\Grim_Embrace.png" />
+    <Content Remove="perk_images\killer_perks\Hex_Blood_Favor.png" />
+    <Content Remove="perk_images\killer_perks\Hex_Crowd_Control.png" />
+    <Content Remove="perk_images\killer_perks\Hex_Devour_Hope.png" />
+    <Content Remove="perk_images\killer_perks\Hex_Face_the_Darkness.png" />
+    <Content Remove="perk_images\killer_perks\Hex_Haunted_Ground.png" />
+    <Content Remove="perk_images\killer_perks\Hex_Huntress_Lullaby.png" />
+    <Content Remove="perk_images\killer_perks\Hex_Nothing_but_Misery.png" />
+    <Content Remove="perk_images\killer_perks\Hex_No_One_Escapes_Death.png" />
+    <Content Remove="perk_images\killer_perks\Hex_Pentimento.png" />
+    <Content Remove="perk_images\killer_perks\Hex_Plaything.png" />
+    <Content Remove="perk_images\killer_perks\Hex_Retribution.png" />
+    <Content Remove="perk_images\killer_perks\Hex_Ruin.png" />
+    <Content Remove="perk_images\killer_perks\Hex_The_Third_Seal.png" />
+    <Content Remove="perk_images\killer_perks\Hex_Thrill_of_the_Hunt.png" />
+    <Content Remove="perk_images\killer_perks\Hex_Two_Can_Play.png" />
+    <Content Remove="perk_images\killer_perks\Hex_Undying.png" />
+    <Content Remove="perk_images\killer_perks\Hex_Wretched_Fate.png" />
+    <Content Remove="perk_images\killer_perks\Hoarder.png" />
+    <Content Remove="perk_images\killer_perks\Hubris.png" />
+    <Content Remove="perk_images\killer_perks\Human_Greed.png" />
+    <Content Remove="perk_images\killer_perks\Hysteria.png" />
+    <Content Remove="perk_images\killer_perks\I%27m_All_Ears.png" />
+    <Content Remove="perk_images\killer_perks\Infectious_Fright.png" />
+    <Content Remove="perk_images\killer_perks\Insidious.png" />
+    <Content Remove="perk_images\killer_perks\Iron_Grasp.png" />
+    <Content Remove="perk_images\killer_perks\Iron_Maiden.png" />
+    <Content Remove="perk_images\killer_perks\Knock_Out.png" />
+    <Content Remove="perk_images\killer_perks\Languid_Touch.png" />
+    <Content Remove="perk_images\killer_perks\Lethal_Pursuer.png" />
+    <Content Remove="perk_images\killer_perks\Leverage.png" />
+    <Content Remove="perk_images\killer_perks\Lightborn.png" />
+    <Content Remove="perk_images\killer_perks\Machine_Learning.png" />
+    <Content Remove="perk_images\killer_perks\Mad_Grit.png" />
+    <Content Remove="perk_images\killer_perks\Make_Your_Choice.png" />
+    <Content Remove="perk_images\killer_perks\Merciless_Storm.png" />
+    <Content Remove="perk_images\killer_perks\Mindbreaker.png" />
+    <Content Remove="perk_images\killer_perks\Monitor_&amp;_Abuse.png" />
+    <Content Remove="perk_images\killer_perks\Nemesis.png" />
+    <Content Remove="perk_images\killer_perks\None_are_Free.png" />
+    <Content Remove="perk_images\killer_perks\Nowhere_to_Hide.png" />
+    <Content Remove="perk_images\killer_perks\No_Quarter.png" />
+    <Content Remove="perk_images\killer_perks\No_Way_Out.png" />
+    <Content Remove="perk_images\killer_perks\Oppression.png" />
+    <Content Remove="perk_images\killer_perks\Overcharge.png" />
+    <Content Remove="perk_images\killer_perks\Overwhelming_Presence.png" />
+    <Content Remove="perk_images\killer_perks\Play_with_Your_Food.png" />
+    <Content Remove="perk_images\killer_perks\Pop_Goes_the_Weasel.png" />
+    <Content Remove="perk_images\killer_perks\Predator.png" />
+    <Content Remove="perk_images\killer_perks\Rancor.png" />
+    <Content Remove="perk_images\killer_perks\Rapid_Brutality.png" />
+    <Content Remove="perk_images\killer_perks\Remember_Me.png" />
+    <Content Remove="perk_images\killer_perks\Save_the_Best_for_Last.png" />
+    <Content Remove="perk_images\killer_perks\Scourge_Hook_Floods_of_Rage.png" />
+    <Content Remove="perk_images\killer_perks\Scourge_Hook_Gift_of_Pain.png" />
+    <Content Remove="perk_images\killer_perks\Scourge_Hook_Hangman%27s_Trick.png" />
+    <Content Remove="perk_images\killer_perks\Scourge_Hook_Jagged_Compass.png" />
+    <Content Remove="perk_images\killer_perks\Scourge_Hook_Monstrous_Shrine.png" />
+    <Content Remove="perk_images\killer_perks\Scourge_Hook_Pain_Resonance.png" />
+    <Content Remove="perk_images\killer_perks\Septic_Touch.png" />
+    <Content Remove="perk_images\killer_perks\Shadowborn.png" />
+    <Content Remove="perk_images\killer_perks\Shattered_Hope.png" />
+    <Content Remove="perk_images\killer_perks\Sloppy_Butcher.png" />
+    <Content Remove="perk_images\killer_perks\Spies_from_the_Shadows.png" />
+    <Content Remove="perk_images\killer_perks\Spirit_Fury.png" />
+    <Content Remove="perk_images\killer_perks\Starstruck.png" />
+    <Content Remove="perk_images\killer_perks\Stridor.png" />
+    <Content Remove="perk_images\killer_perks\Superior_Anatomy.png" />
+    <Content Remove="perk_images\killer_perks\Surge.png" />
+    <Content Remove="perk_images\killer_perks\Surveillance.png" />
+    <Content Remove="perk_images\killer_perks\Terminus.png" />
+    <Content Remove="perk_images\killer_perks\Territorial_Imperative.png" />
+    <Content Remove="perk_images\killer_perks\Thanatophobia.png" />
+    <Content Remove="perk_images\killer_perks\Thrilling_Tremors.png" />
+    <Content Remove="perk_images\killer_perks\THWACK!.png" />
+    <Content Remove="perk_images\killer_perks\Tinkerer.png" />
+    <Content Remove="perk_images\killer_perks\Trail_of_Torment.png" />
+    <Content Remove="perk_images\killer_perks\Ultimate_Weapon.png" />
+    <Content Remove="perk_images\killer_perks\Unbound.png" />
+    <Content Remove="perk_images\killer_perks\Undone.png" />
+    <Content Remove="perk_images\killer_perks\Unforeseen.png" />
+    <Content Remove="perk_images\killer_perks\Unnerving_Presence.png" />
+    <Content Remove="perk_images\killer_perks\Unrelenting.png" />
+    <Content Remove="perk_images\killer_perks\Weave_Attunement.png" />
+    <Content Remove="perk_images\killer_perks\Whispers.png" />
+    <Content Remove="perk_images\killer_perks\Zanshin_Tactics.png" />
     <Content Remove="perk_images\Knock_Out.png" />
     <Content Remove="perk_images\Languid_Touch.png" />
     <Content Remove="perk_images\Lethal_Pursuer.png" />
@@ -179,6 +309,159 @@
     <Content Remove="perk_images\Superior_Anatomy.png" />
     <Content Remove="perk_images\Surge.png" />
     <Content Remove="perk_images\Surveillance.png" />
+    <Content Remove="perk_images\survivor_perks\Ace_in_the_Hole.png" />
+    <Content Remove="perk_images\survivor_perks\Adrenaline.png" />
+    <Content Remove="perk_images\survivor_perks\Aftercare.png" />
+    <Content Remove="perk_images\survivor_perks\Alert.png" />
+    <Content Remove="perk_images\survivor_perks\Any_Means_Necessary.png" />
+    <Content Remove="perk_images\survivor_perks\Appraisal.png" />
+    <Content Remove="perk_images\survivor_perks\Autodidactpng.png" />
+    <Content Remove="perk_images\survivor_perks\Babysitter.png" />
+    <Content Remove="perk_images\survivor_perks\Background_Player.png" />
+    <Content Remove="perk_images\survivor_perks\Balanced_Landing.png" />
+    <Content Remove="perk_images\survivor_perks\Bardic_Inspiration.png" />
+    <Content Remove="perk_images\survivor_perks\Better_Than_New.png" />
+    <Content Remove="perk_images\survivor_perks\Better_Together.png" />
+    <Content Remove="perk_images\survivor_perks\Bite_the_Bullet.png" />
+    <Content Remove="perk_images\survivor_perks\Blast_Mine.png" />
+    <Content Remove="perk_images\survivor_perks\Blood_Pact.png" />
+    <Content Remove="perk_images\survivor_perks\Blood_Rush.png" />
+    <Content Remove="perk_images\survivor_perks\Boil_Over.png" />
+    <Content Remove="perk_images\survivor_perks\Bond.png" />
+    <Content Remove="perk_images\survivor_perks\Boon_Circle_of_Healing.png" />
+    <Content Remove="perk_images\survivor_perks\Boon_Dark_Theory.png" />
+    <Content Remove="perk_images\survivor_perks\Boon_Exponential.png" />
+    <Content Remove="perk_images\survivor_perks\Boon_Illumination.png" />
+    <Content Remove="perk_images\survivor_perks\Boon_Shadow_Step.png" />
+    <Content Remove="perk_images\survivor_perks\Borrowed_Time.png" />
+    <Content Remove="perk_images\survivor_perks\Botany_Knowledge.png" />
+    <Content Remove="perk_images\survivor_perks\Breakdown.png" />
+    <Content Remove="perk_images\survivor_perks\Breakout.png" />
+    <Content Remove="perk_images\survivor_perks\Buckle_Up.png" />
+    <Content Remove="perk_images\survivor_perks\Built_To_Last.png" />
+    <Content Remove="perk_images\survivor_perks\Calm_Spirit.png" />
+    <Content Remove="perk_images\survivor_perks\Camaraderie.png" />
+    <Content Remove="perk_images\survivor_perks\Champion_of_Light.png" />
+    <Content Remove="perk_images\survivor_perks\Chemical_Trap.png" />
+    <Content Remove="perk_images\survivor_perks\Clairvoyance.png" />
+    <Content Remove="perk_images\survivor_perks\Clean_Break.png" />
+    <Content Remove="perk_images\survivor_perks\Corrective_Action.png" />
+    <Content Remove="perk_images\survivor_perks\Counterforce.png" />
+    <Content Remove="perk_images\survivor_perks\Cut_Loose.png" />
+    <Content Remove="perk_images\survivor_perks\Dance_With_Me.png" />
+    <Content Remove="perk_images\survivor_perks\Dark_Sense.png" />
+    <Content Remove="perk_images\survivor_perks\Deadline.png" />
+    <Content Remove="perk_images\survivor_perks\Dead_Hard.png" />
+    <Content Remove="perk_images\survivor_perks\Deception.png" />
+    <Content Remove="perk_images\survivor_perks\Decisive_Strike.png" />
+    <Content Remove="perk_images\survivor_perks\Deja_Vu.png" />
+    <Content Remove="perk_images\survivor_perks\Deliverance.png" />
+    <Content Remove="perk_images\survivor_perks\Desperate_Measures.png" />
+    <Content Remove="perk_images\survivor_perks\Detective%27s_Hunch.png" />
+    <Content Remove="perk_images\survivor_perks\Distortion.png" />
+    <Content Remove="perk_images\survivor_perks\Diversion.png" />
+    <Content Remove="perk_images\survivor_perks\Do_No_Harm.png" />
+    <Content Remove="perk_images\survivor_perks\Dramaturgy.png" />
+    <Content Remove="perk_images\survivor_perks\Duty_of_Care.png" />
+    <Content Remove="perk_images\survivor_perks\Empathic_Connection.png" />
+    <Content Remove="perk_images\survivor_perks\Empathy.png" />
+    <Content Remove="perk_images\survivor_perks\Exultation.png" />
+    <Content Remove="perk_images\survivor_perks\Eyes_of_Belmont.png" />
+    <Content Remove="perk_images\survivor_perks\Fast_Track.png" />
+    <Content Remove="perk_images\survivor_perks\Finesse.png" />
+    <Content Remove="perk_images\survivor_perks\Fixated.png" />
+    <Content Remove="perk_images\survivor_perks\FlashBang.png" />
+    <Content Remove="perk_images\survivor_perks\Flip-Flop.png" />
+    <Content Remove="perk_images\survivor_perks\Fogwise.png" />
+    <Content Remove="perk_images\survivor_perks\For_the_People.png" />
+    <Content Remove="perk_images\survivor_perks\Friendly_Competition.png" />
+    <Content Remove="perk_images\survivor_perks\Hardened.png" />
+    <Content Remove="perk_images\survivor_perks\Head_On.png" />
+    <Content Remove="perk_images\survivor_perks\Hope.png" />
+    <Content Remove="perk_images\survivor_perks\Hyperfocus.png" />
+    <Content Remove="perk_images\survivor_perks\Inner_Focus.png" />
+    <Content Remove="perk_images\survivor_perks\Inner_Strength.png" />
+    <Content Remove="perk_images\survivor_perks\Invocation_Treacherous_Crows.png" />
+    <Content Remove="perk_images\survivor_perks\Invocation_Weaving_Spiders.png" />
+    <Content Remove="perk_images\survivor_perks\Iron_Will.png" />
+    <Content Remove="perk_images\survivor_perks\Kindred.png" />
+    <Content Remove="perk_images\survivor_perks\Leader.png" />
+    <Content Remove="perk_images\survivor_perks\Left_Behind.png" />
+    <Content Remove="perk_images\survivor_perks\Light-Footed.png" />
+    <Content Remove="perk_images\survivor_perks\Lightweight.png" />
+    <Content Remove="perk_images\survivor_perks\Lithe.png" />
+    <Content Remove="perk_images\survivor_perks\Low_Profile.png" />
+    <Content Remove="perk_images\survivor_perks\Lucky_Break.png" />
+    <Content Remove="perk_images\survivor_perks\Lucky_Star.png" />
+    <Content Remove="perk_images\survivor_perks\Made_For_This.png" />
+    <Content Remove="perk_images\survivor_perks\Mettle_of_Man.png" />
+    <Content Remove="perk_images\survivor_perks\Mirrored_Illusion.png" />
+    <Content Remove="perk_images\survivor_perks\Moment_of_Glory.png" />
+    <Content Remove="perk_images\survivor_perks\No_Mither.png" />
+    <Content Remove="perk_images\survivor_perks\No_One_Left_Behind.png" />
+    <Content Remove="perk_images\survivor_perks\Object_of_Obsession.png" />
+    <Content Remove="perk_images\survivor_perks\Off_the_Record.png" />
+    <Content Remove="perk_images\survivor_perks\Open-Handed.png" />
+    <Content Remove="perk_images\survivor_perks\Overcome.png" />
+    <Content Remove="perk_images\survivor_perks\Overzealous.png" />
+    <Content Remove="perk_images\survivor_perks\Parental_Guidance.png" />
+    <Content Remove="perk_images\survivor_perks\Pharmacy.png" />
+    <Content Remove="perk_images\survivor_perks\Plot_Twist.png" />
+    <Content Remove="perk_images\survivor_perks\Plunderer%27s_Instinct.png" />
+    <Content Remove="perk_images\survivor_perks\Poise.png" />
+    <Content Remove="perk_images\survivor_perks\Poised.png" />
+    <Content Remove="perk_images\survivor_perks\Potential_Energy.png" />
+    <Content Remove="perk_images\survivor_perks\Power_Struggle.png" />
+    <Content Remove="perk_images\survivor_perks\Premonition.png" />
+    <Content Remove="perk_images\survivor_perks\Prove_Thyself.png" />
+    <Content Remove="perk_images\survivor_perks\Quick_&amp;_Quiet.png" />
+    <Content Remove="perk_images\survivor_perks\Quick_Gambit.png" />
+    <Content Remove="perk_images\survivor_perks\Rapid_Response.png" />
+    <Content Remove="perk_images\survivor_perks\Reactive_Healing.png" />
+    <Content Remove="perk_images\survivor_perks\Reassurance.png" />
+    <Content Remove="perk_images\survivor_perks\Red_Herring.png" />
+    <Content Remove="perk_images\survivor_perks\Repressed_Alliance.png" />
+    <Content Remove="perk_images\survivor_perks\Residual_Manifest.png" />
+    <Content Remove="perk_images\survivor_perks\Resilience.png" />
+    <Content Remove="perk_images\survivor_perks\Resurgence.png" />
+    <Content Remove="perk_images\survivor_perks\Rookie_Spirit.png" />
+    <Content Remove="perk_images\survivor_perks\Saboteur.png" />
+    <Content Remove="perk_images\survivor_perks\Scavenger.png" />
+    <Content Remove="perk_images\survivor_perks\Scene_Partner.png" />
+    <Content Remove="perk_images\survivor_perks\Second_Wind.png" />
+    <Content Remove="perk_images\survivor_perks\Self-Care.png" />
+    <Content Remove="perk_images\survivor_perks\Self-Preservation.png" />
+    <Content Remove="perk_images\survivor_perks\Shoulder_the_Burden.png" />
+    <Content Remove="perk_images\survivor_perks\Slippery_Meat.png" />
+    <Content Remove="perk_images\survivor_perks\Small_Game.png" />
+    <Content Remove="perk_images\survivor_perks\Smash_Hit.png" />
+    <Content Remove="perk_images\survivor_perks\Sole_Survivor.png" />
+    <Content Remove="perk_images\survivor_perks\Solidarity.png" />
+    <Content Remove="perk_images\survivor_perks\Soul_Guard.png" />
+    <Content Remove="perk_images\survivor_perks\Specialist.png" />
+    <Content Remove="perk_images\survivor_perks\Spine_Chill.png" />
+    <Content Remove="perk_images\survivor_perks\Sprint_Burst.png" />
+    <Content Remove="perk_images\survivor_perks\Stake_Out.png" />
+    <Content Remove="perk_images\survivor_perks\Still_Sight.png" />
+    <Content Remove="perk_images\survivor_perks\Streetwise.png" />
+    <Content Remove="perk_images\survivor_perks\Strength_in_Shadows.png" />
+    <Content Remove="perk_images\survivor_perks\Teamwork_Collective_Stealth.png" />
+    <Content Remove="perk_images\survivor_perks\Teamwork_Power_of_Two.png" />
+    <Content Remove="perk_images\survivor_perks\Technician.png" />
+    <Content Remove="perk_images\survivor_perks\Tenacity.png" />
+    <Content Remove="perk_images\survivor_perks\This_is_Not_Happening.png" />
+    <Content Remove="perk_images\survivor_perks\Troubleshooter.png" />
+    <Content Remove="perk_images\survivor_perks\Unbreakable.png" />
+    <Content Remove="perk_images\survivor_perks\Up_the_Ante.png" />
+    <Content Remove="perk_images\survivor_perks\Urban_Evasion.png" />
+    <Content Remove="perk_images\survivor_perks\Vigil.png" />
+    <Content Remove="perk_images\survivor_perks\Visionary.png" />
+    <Content Remove="perk_images\survivor_perks\Wake_Up!.png" />
+    <Content Remove="perk_images\survivor_perks\We%27ll_Make_It.png" />
+    <Content Remove="perk_images\survivor_perks\We%27re_Gonna_Live_Forever.png" />
+    <Content Remove="perk_images\survivor_perks\Wicked.png" />
+    <Content Remove="perk_images\survivor_perks\Windows_of_Opportunity.png" />
+    <Content Remove="perk_images\survivor_perks\Wiretap.png" />
     <Content Remove="perk_images\Terminus.png" />
     <Content Remove="perk_images\Territorial_Imperative.png" />
     <Content Remove="perk_images\Thanatophobia.png" />
@@ -373,6 +656,9 @@
     <None Remove="Resources\Arrow.png" />
     <None Remove="survivor_images\Ace_Visconti.png" />
     <None Remove="survivor_images\Adam_Francis.png" />
+    <None Remove="survivor_images\Ada_Wong.png" />
+    <None Remove="survivor_images\Aestri_Yazar_&amp;_Baermar_Uraz.png" />
+    <None Remove="survivor_images\Alan_Wake.png" />
     <None Remove="survivor_images\Ash_Williams.png" />
     <None Remove="survivor_images\Bill_Overbeck.png" />
     <None Remove="survivor_images\Cheryl_Mason.png" />
@@ -380,23 +666,36 @@
     <None Remove="survivor_images\David_King.png" />
     <None Remove="survivor_images\David_Tapp.png" />
     <None Remove="survivor_images\Dwight_Fairfield.png" />
-    <None Remove="survivor_images\Elodie_Rakoto.png" />
+    <None Remove="survivor_images\Ellen_Ripley.png" />
     <None Remove="survivor_images\Felix_Richter.png" />
     <None Remove="survivor_images\Feng_Min.png" />
+    <None Remove="survivor_images\Gabriel_Soma.png" />
+    <None Remove="survivor_images\Haddie_Kaur.png" />
     <None Remove="survivor_images\Jake_Park.png" />
     <None Remove="survivor_images\Jane_Romero.png" />
     <None Remove="survivor_images\Jeff_Johansen.png" />
     <None Remove="survivor_images\Jill_Valentine.png" />
+    <None Remove="survivor_images\Jonah_Vasquez.png" />
     <None Remove="survivor_images\Kate_Denson.png" />
+    <None Remove="survivor_images\Lara_Croft.png" />
     <None Remove="survivor_images\Laurie_Strode.png" />
     <None Remove="survivor_images\Leon_Scott_Kennedy.png" />
     <None Remove="survivor_images\Meg_Thomas.png" />
     <None Remove="survivor_images\Mikaela_Reid.png" />
     <None Remove="survivor_images\Nancy_Wheeler.png" />
     <None Remove="survivor_images\Nea_Karlsson.png" />
+    <None Remove="survivor_images\Nicolas_Cage.png" />
     <None Remove="survivor_images\Orela_Rose.png" />
     <None Remove="survivor_images\Quentin_Smith.png" />
+    <None Remove="survivor_images\Rebecca_Chambers.png" />
+    <None Remove="survivor_images\Renato_Lyra.png" />
+    <None Remove="survivor_images\Sable_Ward.png" />
     <None Remove="survivor_images\Steve_Harrington.png" />
+    <None Remove="survivor_images\Taurie_Cain.png" />
+    <None Remove="survivor_images\Thalita_Lyra.png" />
+    <None Remove="survivor_images\Trevor_Belmont.png" />
+    <None Remove="survivor_images\Vittorio_Toscano.png" />
+    <None Remove="survivor_images\Yoichi_Asakawa.png" />
     <None Remove="survivor_images\Yui_Kimura.png" />
     <None Remove="survivor_images\Yun-Jin_Lee.png" />
     <None Remove="survivor_images\Zarina_Kassir.png" />
@@ -922,6 +1221,460 @@
     <Resource Include="perk_images\killer_perks\Zanshin_Tactics.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="perk_images\survivor_perks\Ace_in_the_Hole.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Adrenaline.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Aftercare.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Alert.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Any_Means_Necessary.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Appraisal.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Autodidactpng.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Babysitter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Background_Player.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Balanced_Landing.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Bardic_Inspiration.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Better_Than_New.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Better_Together.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Bite_the_Bullet.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Blast_Mine.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Blood_Pact.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Blood_Rush.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Boil_Over.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Bond.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Boon_Circle_of_Healing.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Boon_Dark_Theory.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Boon_Exponential.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Boon_Illumination.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Boon_Shadow_Step.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Borrowed_Time.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Botany_Knowledge.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Breakdown.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Breakout.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Buckle_Up.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Built_To_Last.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Calm_Spirit.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Camaraderie.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Champion_of_Light.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Chemical_Trap.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Clairvoyance.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Clean_Break.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Corrective_Action.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Counterforce.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Cut_Loose.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Dance_With_Me.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Dark_Sense.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Deadline.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Dead_Hard.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Deception.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Decisive_Strike.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Deja_Vu.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Deliverance.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Desperate_Measures.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Detective's_Hunch.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Distortion.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Diversion.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Do_No_Harm.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Dramaturgy.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Duty_of_Care.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Empathic_Connection.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Empathy.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Exultation.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Eyes_of_Belmont.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Fast_Track.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Finesse.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Fixated.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\FlashBang.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Flip-Flop.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Fogwise.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\For_the_People.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Friendly_Competition.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Hardened.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Head_On.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Hope.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Hyperfocus.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Inner_Focus.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Inner_Strength.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Invocation_Treacherous_Crows.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Invocation_Weaving_Spiders.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Iron_Will.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Kindred.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Leader.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Left_Behind.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Light-Footed.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Lightweight.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Lithe.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Low_Profile.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Lucky_Break.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Lucky_Star.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Made_For_This.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Mettle_of_Man.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Mirrored_Illusion.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Moment_of_Glory.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\No_Mither.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\No_One_Left_Behind.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Object_of_Obsession.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Off_the_Record.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Open-Handed.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Overcome.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Overzealous.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Parental_Guidance.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Pharmacy.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Plot_Twist.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Plunderer's_Instinct.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Poised.png" />
+    <Resource Include="perk_images\survivor_perks\Potential_Energy.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Power_Struggle.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Premonition.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Prove_Thyself.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Quick_&amp;_Quiet.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Quick_Gambit.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Rapid_Response.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Reactive_Healing.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Reassurance.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Red_Herring.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Repressed_Alliance.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Residual_Manifest.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Resilience.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Resurgence.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Rookie_Spirit.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Saboteur.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Scavenger.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Scene_Partner.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Second_Wind.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Self-Preservation.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Self-Care.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Shoulder_the_Burden.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Slippery_Meat.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Small_Game.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Smash_Hit.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Sole_Survivor.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Solidarity.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Soul_Guard.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Specialist.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Spine_Chill.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Sprint_Burst.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Stake_Out.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Still_Sight.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Streetwise.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Strength_in_Shadows.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Teamwork_Collective_Stealth.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Teamwork_Power_of_Two.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Technician.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Tenacity.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\This_is_Not_Happening.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Troubleshooter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Unbreakable.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Up_the_Ante.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Urban_Evasion.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Vigil.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Visionary.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Wake_Up!.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\We'll_Make_It.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\We're_Gonna_Live_Forever.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Wicked.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Windows_of_Opportunity.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Wiretap.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Resources\Arrow.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
@@ -929,6 +1682,15 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="survivor_images\Adam_Francis.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="survivor_images\Ada_Wong.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="survivor_images\Aestri_Yazar_&amp;_Baermar_Uraz.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="survivor_images\Alan_Wake.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="survivor_images\Ash_Williams.png">
@@ -952,6 +1714,9 @@
     <Resource Include="survivor_images\Dwight_Fairfield.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="survivor_images\Ellen_Ripley.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="survivor_images\Elodie_Rakoto.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
@@ -959,6 +1724,12 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="survivor_images\Feng_Min.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="survivor_images\Gabriel_Soma.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="survivor_images\Haddie_Kaur.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="survivor_images\Jake_Park.png">
@@ -973,7 +1744,13 @@
     <Resource Include="survivor_images\Jill_Valentine.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="survivor_images\Jonah_Vasquez.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="survivor_images\Kate_Denson.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="survivor_images\Lara_Croft.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="survivor_images\Laurie_Strode.png">
@@ -994,13 +1771,40 @@
     <Resource Include="survivor_images\Nea_Karlsson.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="survivor_images\Nicolas_Cage.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="survivor_images\Orela_Rose.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="survivor_images\Quentin_Smith.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="survivor_images\Rebecca_Chambers.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="survivor_images\Renato_Lyra.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="survivor_images\Sable_Ward.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="survivor_images\Steve_Harrington.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="survivor_images\Taurie_Cain.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="survivor_images\Thalita_Lyra.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="survivor_images\Trevor_Belmont.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="survivor_images\Vittorio_Toscano.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="survivor_images\Yoichi_Asakawa.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="survivor_images\Yui_Kimura.png">
@@ -1013,10 +1817,6 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <!-- Other <Resource Include="..."> entries -->
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="perk_images\survivor_perks\" />
   </ItemGroup>
 
 </Project>

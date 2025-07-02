@@ -24,7 +24,11 @@
 		<!-- Background Image -->
 		<Image x:Name="background_image2" Source="/background_image/dbd_background2.png" Stretch="Fill" Opacity="0"/>
 
-		<!-- Killer Name (Lowered & Enlarged) -->
+        <!-- Include Perks Toggle -->
+        <CheckBox x:Name="IncludePerksCheckBox" Content="Include Perks" IsChecked="False" Margin="1,763,655,-13" Foreground="White" 
+                  FontSize="18" VerticalContentAlignment="Center" IsEnabled="True" Panel.ZIndex="99"/>
+
+        <!-- Killer Name (Lowered & Enlarged) -->
 		<TextBlock x:Name="CharacterName" Foreground="Red" FontSize="44"
                  HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,150,0,0" Opacity="0" Panel.ZIndex="99"/>
 

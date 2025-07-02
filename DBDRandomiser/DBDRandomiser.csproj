@@ -26,6 +26,7 @@
     <Content Remove="background_image\dbd_background.png" />
     <Content Remove="background_image\dbd_background2.png" />
     <Content Remove="background_image\dbd_background2.xcf" />
+    <Content Remove="killer_images\The_Animatronic.png" />
     <Content Remove="killer_images\the_artist.png" />
     <Content Remove="killer_images\the_blight.png" />
     <Content Remove="killer_images\the_cannibal.png" />
@@ -181,10 +182,13 @@
     <Content Remove="perk_images\killer_perks\Gearhead.png" />
     <Content Remove="perk_images\killer_perks\Genetic_Limits.png" />
     <Content Remove="perk_images\killer_perks\Grim_Embrace.png" />
+    <Content Remove="perk_images\killer_perks\Haywire.png" />
+    <Content Remove="perk_images\killer_perks\Help_Wanted.png" />
     <Content Remove="perk_images\killer_perks\Hex_Blood_Favor.png" />
     <Content Remove="perk_images\killer_perks\Hex_Crowd_Control.png" />
     <Content Remove="perk_images\killer_perks\Hex_Devour_Hope.png" />
     <Content Remove="perk_images\killer_perks\Hex_Face_the_Darkness.png" />
+    <Content Remove="perk_images\killer_perks\Hex_Fortune%27s_Fool.png" />
     <Content Remove="perk_images\killer_perks\Hex_Haunted_Ground.png" />
     <Content Remove="perk_images\killer_perks\Hex_Huntress_Lullaby.png" />
     <Content Remove="perk_images\killer_perks\Hex_Nothing_but_Misery.png" />
@@ -221,11 +225,13 @@
     <Content Remove="perk_images\killer_perks\Nemesis.png" />
     <Content Remove="perk_images\killer_perks\None_are_Free.png" />
     <Content Remove="perk_images\killer_perks\Nowhere_to_Hide.png" />
+    <Content Remove="perk_images\killer_perks\No_Holds_Barred.png" />
     <Content Remove="perk_images\killer_perks\No_Quarter.png" />
     <Content Remove="perk_images\killer_perks\No_Way_Out.png" />
     <Content Remove="perk_images\killer_perks\Oppression.png" />
     <Content Remove="perk_images\killer_perks\Overcharge.png" />
     <Content Remove="perk_images\killer_perks\Overwhelming_Presence.png" />
+    <Content Remove="perk_images\killer_perks\Phantom_Fear.png" />
     <Content Remove="perk_images\killer_perks\Play_with_Your_Food.png" />
     <Content Remove="perk_images\killer_perks\Pop_Goes_the_Weasel.png" />
     <Content Remove="perk_images\killer_perks\Predator.png" />
@@ -239,6 +245,7 @@
     <Content Remove="perk_images\killer_perks\Scourge_Hook_Jagged_Compass.png" />
     <Content Remove="perk_images\killer_perks\Scourge_Hook_Monstrous_Shrine.png" />
     <Content Remove="perk_images\killer_perks\Scourge_Hook_Pain_Resonance.png" />
+    <Content Remove="perk_images\killer_perks\Scourge_Hook_Weeping_Wounds.png" />
     <Content Remove="perk_images\killer_perks\Septic_Touch.png" />
     <Content Remove="perk_images\killer_perks\Shadowborn.png" />
     <Content Remove="perk_images\killer_perks\Shattered_Hope.png" />
@@ -315,7 +322,7 @@
     <Content Remove="perk_images\survivor_perks\Alert.png" />
     <Content Remove="perk_images\survivor_perks\Any_Means_Necessary.png" />
     <Content Remove="perk_images\survivor_perks\Appraisal.png" />
-    <Content Remove="perk_images\survivor_perks\Autodidactpng.png" />
+    <Content Remove="perk_images\survivor_perks\Autodidact.png" />
     <Content Remove="perk_images\survivor_perks\Babysitter.png" />
     <Content Remove="perk_images\survivor_perks\Background_Player.png" />
     <Content Remove="perk_images\survivor_perks\Balanced_Landing.png" />
@@ -706,12 +713,17 @@
     <Resource Include="background_image\dbd_background.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="background_image\dbd_background2.png" />
+    <Resource Include="background_image\dbd_background2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="background_image\dbd_background2.xcf" />
     <Resource Include="Icons\dbd_rando.ico">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Icons\Skull.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="killer_images\The_Animatronic.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="killer_images\the_artist.png">
@@ -897,9 +909,6 @@
     <Resource Include="perk_images\killer_perks\Dark_Devotion.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="perk_images\killer_perks\Deadlock.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
     <Resource Include="perk_images\killer_perks\Dead_Man%27s_Switch.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
@@ -966,6 +975,12 @@
     <Resource Include="perk_images\killer_perks\Grim_Embrace.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="perk_images\killer_perks\Haywire.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\killer_perks\Help_Wanted.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="perk_images\killer_perks\Hex_Blood_Favor.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
@@ -976,6 +991,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="perk_images\killer_perks\Hex_Face_the_Darkness.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\killer_perks\Hex_Fortune's_Fool.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="perk_images\killer_perks\Hex_Haunted_Ground.png">
@@ -991,9 +1009,6 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="perk_images\killer_perks\Hex_Pentimento.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="perk_images\killer_perks\Hex_Plaything.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="perk_images\killer_perks\Hex_Retribution.png">
@@ -1086,6 +1101,9 @@
     <Resource Include="perk_images\killer_perks\Nowhere_to_Hide.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="perk_images\killer_perks\No_Holds_Barred.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="perk_images\killer_perks\No_Quarter.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
@@ -1099,6 +1117,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="perk_images\killer_perks\Overwhelming_Presence.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\killer_perks\Phantom_Fear.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="perk_images\killer_perks\Play_with_Your_Food.png">
@@ -1125,9 +1146,6 @@
     <Resource Include="perk_images\killer_perks\Scourge_Hook_Floods_of_Rage.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="perk_images\killer_perks\Scourge_Hook_Gift_of_Pain.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
     <Resource Include="perk_images\killer_perks\Scourge_Hook_Hangman%27s_Trick.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
@@ -1138,6 +1156,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="perk_images\killer_perks\Scourge_Hook_Pain_Resonance.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\killer_perks\Scourge_Hook_Weeping_Wounds.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="perk_images\killer_perks\Septic_Touch.png">
@@ -1239,7 +1260,7 @@
     <Resource Include="perk_images\survivor_perks\Appraisal.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="perk_images\survivor_perks\Autodidactpng.png">
+    <Resource Include="perk_images\survivor_perks\Autodidact.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="perk_images\survivor_perks\Babysitter.png">
@@ -1518,7 +1539,9 @@
     <Resource Include="perk_images\survivor_perks\Plunderer's_Instinct.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="perk_images\survivor_perks\Poised.png" />
+    <Resource Include="perk_images\survivor_perks\Poised.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="perk_images\survivor_perks\Potential_Energy.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>

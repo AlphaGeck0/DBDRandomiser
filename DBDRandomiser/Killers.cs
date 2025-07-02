@@ -14,7 +14,7 @@ namespace DBDRandomiser
             "The Demogorgon", "The Oni", "The Deathslinger", "The Executioner", "The Blight", "The Twins", "The Trickster",
             "The Nemesis", "The Cenobite", "The Artist", "The Onryo", "The Dredge", "The Mastermind", "The Knight",
             "The Skull Merchant", "The Singularity", "The Xenomorph", "The Good Guy", "The Unknown", "The Lich",
-            "The Dark Lord", "The Houndmaster", "The Ghoul"
+            "The Dark Lord", "The Houndmaster", "The Ghoul", "The Animatronic"
         ];
     }
 }

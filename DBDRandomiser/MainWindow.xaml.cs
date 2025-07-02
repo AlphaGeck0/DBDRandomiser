@@ -83,8 +83,8 @@ namespace DBDRandomiser
                 Storyboard.SetTarget(fadeInStoryboard, PerksContainer);
                 fadeInStoryboard.Begin();
 
-                if (background_image2.Opacity!= 0)
-                        {
+                if (background_image2.Opacity != 0)
+                {
                     background_image2.Opacity = 1;
                 }
                 else
@@ -136,82 +136,85 @@ namespace DBDRandomiser
                 MessageBox.Show($"Error loading killer image: {ex.Message}");
             }
 
-            // Shuffle the perk list and pick the first four unique perks
-            List<string> shuffledPerks = killerPerks.OrderBy(x => rand.Next()).Distinct().ToList();
-            string[] selectedPerks = shuffledPerks.Take(4).ToArray();
-
-            // Initialize the index and timer
-            index = 0;
-            timer = new System.Windows.Threading.DispatcherTimer
+            if (IncludePerksCheckBox.IsChecked == true)
             {
-                Interval = TimeSpan.FromMilliseconds(1000) // Delay between each perk
-            };
+                // Shuffle the perk list and pick the first four unique perks
+                List<string> shuffledPerks = killerPerks.OrderBy(x => rand.Next()).Distinct().ToList();
+                string[] selectedPerks = shuffledPerks.Take(4).ToArray();
 
-            timer.Tick += (s, args) =>
-            {
-                if (index >= selectedPerks.Length)
+                // Initialize the index and timer
+                index = 0;
+                timer = new System.Windows.Threading.DispatcherTimer
                 {
-                    timer.Stop(); // Stop the timer when all perks are added
-                    return;
-                }
-
-                string perk = selectedPerks[index];
-
-                // Create a StackPanel to hold the image and text
-                StackPanel perkPanel = new StackPanel
-                {
-                    Orientation = Orientation.Vertical,
-                    Margin = new Thickness(15, 0, 15, 0), // Adds spacing between perks
-                    Opacity = 0 // Start with 0 opacity for fade-in animation
+                    Interval = TimeSpan.FromMilliseconds(1000) // Delay between each perk
                 };
 
-                // Add the perk image
-                if (killerPerkImages.TryGetValue(perk, out string perkImageUri))
+                timer.Tick += (s, args) =>
                 {
-                    try
+                    if (index >= selectedPerks.Length)
                     {
-                        Image perkImage = new Image
+                        timer.Stop(); // Stop the timer when all perks are added
+                        return;
+                    }
+
+                    string perk = selectedPerks[index];
+
+                    // Create a StackPanel to hold the image and text
+                    StackPanel perkPanel = new StackPanel
+                    {
+                        Orientation = Orientation.Vertical,
+                        Margin = new Thickness(15, 0, 15, 0), // Adds spacing between perks
+                        Opacity = 0 // Start with 0 opacity for fade-in animation
+                    };
+
+                    // Add the perk image
+                    if (killerPerkImages.TryGetValue(perk, out string perkImageUri))
+                    {
+                        try
                         {
-                            Source = new BitmapImage(new Uri(perkImageUri, UriKind.Absolute)),
-                            Height = 50,
-                            Margin = new Thickness(0, 0, 0, 5)
-                        };
-                        perkPanel.Children.Add(perkImage);
+                            Image perkImage = new Image
+                            {
+                                Source = new BitmapImage(new Uri(perkImageUri, UriKind.Absolute)),
+                                Height = 50,
+                                Margin = new Thickness(0, 0, 0, 5)
+                            };
+                            perkPanel.Children.Add(perkImage);
+                        }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show($"Error loading image for perk '{perk}': {ex.Message}");
+                        }
+
                     }
-                    catch (Exception ex)
+
+                    // Add the perk text
+                    TextBlock perkText = new TextBlock
                     {
-                        MessageBox.Show($"Error loading image for perk '{perk}': {ex.Message}");
-                    }
+                        Text = perk,
+                        Foreground = System.Windows.Media.Brushes.White,
+                        FontSize = 15,
+                        TextAlignment = TextAlignment.Center,
+                        TextWrapping = TextWrapping.Wrap,
+                    };
+                    perkPanel.Children.Add(perkText);
 
-                }
+                    // Add the StackPanel to the PerksContainer
+                    PerksContainer.Children.Add(perkPanel);
 
-                // Add the perk text
-                TextBlock perkText = new TextBlock
-                {
-                    Text = perk,
-                    Foreground = System.Windows.Media.Brushes.White,
-                    FontSize = 15,
-                    TextAlignment = TextAlignment.Center,
-                    TextWrapping = TextWrapping.Wrap,
+                    // Apply a fade-in animation to the perk
+                    var fadeInAnimation = new DoubleAnimation
+                    {
+                        From = 0.0,
+                        To = 1.0,
+                        Duration = TimeSpan.FromMilliseconds(500)
+                    };
+                    perkPanel.BeginAnimation(OpacityProperty, fadeInAnimation);
+
+                    index++; // Move to the next perk
                 };
-                perkPanel.Children.Add(perkText);
 
-                // Add the StackPanel to the PerksContainer
-                PerksContainer.Children.Add(perkPanel);
-
-                // Apply a fade-in animation to the perk
-                var fadeInAnimation = new DoubleAnimation
-                {
-                    From = 0.0,
-                    To = 1.0,
-                    Duration = TimeSpan.FromMilliseconds(500)
-                };
-                perkPanel.BeginAnimation(OpacityProperty, fadeInAnimation);
-
-                index++; // Move to the next perk
-            };
-
-            timer.Start(); // Start the timer
+                timer.Start(); // Start the timer
+            }
         }
 
         private void SelectSurvivor_Click(object sender, RoutedEventArgs e)
@@ -302,82 +305,85 @@ namespace DBDRandomiser
                 MessageBox.Show($"Error loading survivor image: {ex.Message}");
             }
 
-            // Shuffle the perk list and pick the first four unique perks
-            List<string> shuffledPerks = survivorPerks.OrderBy(x => rand.Next()).Distinct().ToList();
-            string[] selectedPerks = shuffledPerks.Take(4).ToArray();
-
-            // Initialize the index and timer
-            index = 0;
-            timer = new System.Windows.Threading.DispatcherTimer
+            if (IncludePerksCheckBox.IsChecked == true)
             {
-                Interval = TimeSpan.FromMilliseconds(1000) // Delay between each perk
-            };
+                // Shuffle the perk list and pick the first four unique perks
+                List<string> shuffledPerks = survivorPerks.OrderBy(x => rand.Next()).Distinct().ToList();
+                string[] selectedPerks = shuffledPerks.Take(4).ToArray();
 
-            timer.Tick += (s, args) =>
-            {
-                if (index >= selectedPerks.Length)
+                // Initialize the index and timer
+                index = 0;
+                timer = new System.Windows.Threading.DispatcherTimer
                 {
-                    timer.Stop(); // Stop the timer when all perks are added
-                    return;
-                }
-
-                string perk = selectedPerks[index];
-
-                // Create a StackPanel to hold the image and text
-                StackPanel perkPanel = new StackPanel
-                {
-                    Orientation = Orientation.Vertical,
-                    Margin = new Thickness(15, 0, 15, 0), // Adds spacing between perks
-                    Opacity = 0 // Start with 0 opacity for fade-in animation
+                    Interval = TimeSpan.FromMilliseconds(1000) // Delay between each perk
                 };
 
-                // Add the perk image
-                if (survivorPerkImages.TryGetValue(perk, out string perkImageUri))
+                timer.Tick += (s, args) =>
                 {
-                    try
+                    if (index >= selectedPerks.Length)
                     {
-                        Image perkImage = new Image
+                        timer.Stop(); // Stop the timer when all perks are added
+                        return;
+                    }
+
+                    string perk = selectedPerks[index];
+
+                    // Create a StackPanel to hold the image and text
+                    StackPanel perkPanel = new StackPanel
+                    {
+                        Orientation = Orientation.Vertical,
+                        Margin = new Thickness(15, 0, 15, 0), // Adds spacing between perks
+                        Opacity = 0 // Start with 0 opacity for fade-in animation
+                    };
+
+                    // Add the perk image
+                    if (survivorPerkImages.TryGetValue(perk, out string perkImageUri))
+                    {
+                        try
                         {
-                            Source = new BitmapImage(new Uri(perkImageUri, UriKind.Absolute)),
-                            Height = 50,
-                            Margin = new Thickness(0, 0, 0, 5)
-                        };
-                        perkPanel.Children.Add(perkImage);
+                            Image perkImage = new Image
+                            {
+                                Source = new BitmapImage(new Uri(perkImageUri, UriKind.Absolute)),
+                                Height = 50,
+                                Margin = new Thickness(0, 0, 0, 5)
+                            };
+                            perkPanel.Children.Add(perkImage);
+                        }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show($"Error loading image for perk '{perk}': {ex.Message}");
+                        }
+
                     }
-                    catch (Exception ex)
+
+                    // Add the perk text
+                    TextBlock perkText = new TextBlock
                     {
-                        MessageBox.Show($"Error loading image for perk '{perk}': {ex.Message}");
-                    }
+                        Text = perk,
+                        Foreground = System.Windows.Media.Brushes.White,
+                        FontSize = 15,
+                        TextAlignment = TextAlignment.Center,
+                        TextWrapping = TextWrapping.Wrap,
+                    };
+                    perkPanel.Children.Add(perkText);
 
-                }
+                    // Add the StackPanel to the PerksContainer
+                    PerksContainer.Children.Add(perkPanel);
 
-                // Add the perk text
-                TextBlock perkText = new TextBlock
-                {
-                    Text = perk,
-                    Foreground = System.Windows.Media.Brushes.White,
-                    FontSize = 15,
-                    TextAlignment = TextAlignment.Center,
-                    TextWrapping = TextWrapping.Wrap,
+                    // Apply a fade-in animation to the perk
+                    var fadeInAnimation = new DoubleAnimation
+                    {
+                        From = 0.0,
+                        To = 1.0,
+                        Duration = TimeSpan.FromMilliseconds(500)
+                    };
+                    perkPanel.BeginAnimation(OpacityProperty, fadeInAnimation);
+
+                    index++; // Move to the next perk
                 };
-                perkPanel.Children.Add(perkText);
 
-                // Add the StackPanel to the PerksContainer
-                PerksContainer.Children.Add(perkPanel);
-
-                // Apply a fade-in animation to the perk
-                var fadeInAnimation = new DoubleAnimation
-                {
-                    From = 0.0,
-                    To = 1.0,
-                    Duration = TimeSpan.FromMilliseconds(500)
-                };
-                perkPanel.BeginAnimation(OpacityProperty, fadeInAnimation);
-
-                index++; // Move to the next perk
-            };
-
-            timer.Start(); // Start the timer
+                timer.Start(); // Start the timer
+            }
         }
 
         private void ResetScreen_Click(object sender, RoutedEventArgs e)
@@ -429,7 +435,7 @@ namespace DBDRandomiser
                 {
                     background_image2FadeOut.Begin();
                 }
-                    
+
             }
             else
             {

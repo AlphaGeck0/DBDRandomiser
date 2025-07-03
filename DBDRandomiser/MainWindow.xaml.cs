@@ -28,6 +28,9 @@ namespace DBDRandomiser
         private System.Windows.Threading.DispatcherTimer? timer;
         private int index;
 
+        private List<string>? activeSurvivors;
+        private List<string>? activeKillers;
+
         public MainWindow()
         {
             InitializeComponent();
@@ -101,7 +104,8 @@ namespace DBDRandomiser
             Random rand = new Random();
 
             // Select a random Killer
-            string selectedKiller = killers[rand.Next(killers.Length)];
+            string[] killerPool = (activeKillers != null && activeKillers.Count > 0) ? activeKillers.ToArray() : killers;
+            string selectedKiller = killerPool[rand.Next(killerPool.Length)];
             CharacterName.Text = selectedKiller; // Update the text
             CharacterName.Opacity = 1; // Ensure the label is visible
 
@@ -269,7 +273,8 @@ namespace DBDRandomiser
             Random rand = new Random();
 
             // Select a random Survivor
-            string selectedSurvivor = survivors[rand.Next(survivors.Length)];
+            string[] survivorPool = (activeSurvivors != null && activeSurvivors.Count > 0) ? activeSurvivors.ToArray() : survivors;
+            string selectedSurvivor = survivorPool[rand.Next(survivorPool.Length)];
             CharacterName.Text = selectedSurvivor; // Update the text
             CharacterName.Opacity = 1; // Ensure the label is visible
 
@@ -455,6 +460,27 @@ namespace DBDRandomiser
             if (e.LeftButton == MouseButtonState.Pressed) // Detect left mouse button press
             {
                 this.DragMove(); // Allows the window to be dragged
+            }
+        }
+
+        private void Character_Click(object sender, RoutedEventArgs e)
+        {
+            OpenSelectionWindow();
+        }
+
+        private void OpenSelectionWindow()
+        {
+            var selectionWindow = new SelectionWindow(
+                Survivors.List.ToList(),
+                Killers.List.ToList(),
+                activeSurvivors,
+                activeKillers);
+
+            if (selectionWindow.ShowDialog() == true)
+            {
+                activeSurvivors = selectionWindow.SelectedSurvivors;
+                activeKillers = selectionWindow.SelectedKillers;
+                // Use these lists in your randomizer logic
             }
         }
     }

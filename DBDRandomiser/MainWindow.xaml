@@ -35,9 +35,10 @@
 		<!-- Killer Image (Centered) -->
 		<Image x:Name="CharacterImage" HorizontalAlignment="Center" VerticalAlignment="Center" Height="400" Opacity="0"/>
 
-		<!-- Perks Container (Moved Below Killer Image) -->
+		<!-- Perks Container -->
 		<UniformGrid x:Name="PerksContainer"  Margin="0,590,0,90" Width="800" Rows="1" Columns="4" Opacity="0" RenderTransformOrigin="0.499,0.383" />
 
+        <!-- Close app button -->
 		<Button Width="100" Click="CloseApp_Click" Background="DarkRed" BorderBrush="Crimson" BorderThickness="2" Margin="700,0,0,770" Height="30">
 			<StackPanel Orientation="Horizontal">
 				<Image Source="/icons/Skull.png" Width="20" Height="20" />
@@ -45,7 +46,14 @@
 			</StackPanel>
 		</Button>
 
-		<!-- Buttons (Placed at Bottom) -->
+        <!-- Charater Selection Button button -->
+        <Button Width="150" Height="30" Click="Character_Click"  Background="DimGray" BorderBrush="DarkGray" BorderThickness="2" Margin="-650,0,0,770" >
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Character Selection" Foreground="White" FontWeight="Bold" Margin="5,0,0,0"/>
+            </StackPanel>
+        </Button>
+
+        <!-- Buttons (Placed at Bottom) -->
 		<StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom">
 			<Button Content="Select Random Killer" Click="SelectKiller_Click" Width="200" Background="OrangeRed" Foreground="White" FontWeight="Bold"/>
 			<Button Content="Reset" Click="ResetScreen_Click" Width="100" Background="#AAAAAA" Foreground="Black" FontWeight="Bold"/>

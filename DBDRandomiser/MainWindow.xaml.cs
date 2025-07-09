@@ -10,6 +10,7 @@ using System.Windows.Media.Animation;
 using System.Windows.Controls.Primitives; // Add this for ViewBox
 using System.Linq;
 using System.Diagnostics.Eventing.Reader; // Added for LINQ (used in shuffling)
+using System.Text.Json;
 
 namespace DBDRandomiser
 {
@@ -31,9 +32,48 @@ namespace DBDRandomiser
         private List<string>? activeSurvivors;
         private List<string>? activeKillers;
 
+        private List<string>? activeSurvivorPerks;
+        private List<string>? activeKillerPerks;
+
+        private static string SelectionFilePath =>
+    Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "DBDRandomiser", "user_selections.json");
+
+        private void SaveUserSelections()
+        {
+            var selection = new CharacterSelection
+            {
+                SelectedSurvivors = activeSurvivors ?? Survivors.List.ToList(),
+                SelectedKillers = activeKillers ?? Killers.List.ToList(),
+                SelectedSurvivorPerks = activeSurvivorPerks ?? SurvivorPerks.List.ToList(),
+                SelectedKillerPerks = activeKillerPerks ?? KillerPerks.List.ToList()
+            };
+            Directory.CreateDirectory(Path.GetDirectoryName(SelectionFilePath)!);
+            File.WriteAllText(SelectionFilePath, JsonSerializer.Serialize(selection));
+        }
+
+        private void LoadUserSelections()
+        {
+            if (File.Exists(SelectionFilePath))
+            {
+                var selection = JsonSerializer.Deserialize<CharacterSelection>(File.ReadAllText(SelectionFilePath));
+                activeSurvivors = selection?.SelectedSurvivors ?? Survivors.List.ToList();
+                activeKillers = selection?.SelectedKillers ?? Killers.List.ToList();
+                activeSurvivorPerks = selection?.SelectedSurvivorPerks ?? SurvivorPerks.List.ToList();
+                activeKillerPerks = selection?.SelectedKillerPerks ?? KillerPerks.List.ToList();
+            }
+            else
+            {
+                activeSurvivors = Survivors.List.ToList();
+                activeKillers = Killers.List.ToList();
+                activeSurvivorPerks = SurvivorPerks.List.ToList();
+                activeKillerPerks = KillerPerks.List.ToList();
+            }
+        }
+
         public MainWindow()
         {
             InitializeComponent();
+            LoadUserSelections();
 
             // Ensure the window is visible
             this.Visibility = Visibility.Visible;
@@ -471,16 +511,22 @@ namespace DBDRandomiser
         private void OpenSelectionWindow()
         {
             var selectionWindow = new SelectionWindow(
-                Survivors.List.ToList(),
-                Killers.List.ToList(),
-                activeSurvivors,
-                activeKillers);
+        Survivors.List.ToList(),
+        Killers.List.ToList(),
+        activeSurvivors,
+        activeKillers,
+        SurvivorPerks.List.ToList(),
+        KillerPerks.List.ToList(),
+        activeSurvivorPerks,
+        activeKillerPerks);
 
             if (selectionWindow.ShowDialog() == true)
             {
-                activeSurvivors = selectionWindow.SelectedSurvivors;
-                activeKillers = selectionWindow.SelectedKillers;
-                // Use these lists in your randomizer logic
+                activeSurvivors = selectionWindow.selectedSurvivors;
+                activeKillers = selectionWindow.selectedKillers;
+                activeSurvivorPerks = selectionWindow.selectedSurvivorPerks;
+                activeKillerPerks = selectionWindow.selectedKillerPerks;
+                SaveUserSelections();
             }
         }
     }

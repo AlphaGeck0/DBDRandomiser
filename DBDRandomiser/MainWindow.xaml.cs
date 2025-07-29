@@ -113,7 +113,7 @@ namespace DBDRandomiser
             CharacterImage.Visibility = Visibility.Visible;
 
             // Trigger the FadeInStoryboard for each element
-            Storyboard fadeInStoryboard = this.Resources["FadeInStoryboard"] as Storyboard;
+            Storyboard? fadeInStoryboard = this.Resources["FadeInStoryboard"] as Storyboard;
 
             if (fadeInStoryboard != null)
             {
@@ -182,8 +182,11 @@ namespace DBDRandomiser
 
             if (IncludePerksCheckBox.IsChecked == true)
             {
-                // Shuffle the perk list and pick the first four unique perks
-                List<string> shuffledPerks = killerPerks.OrderBy(x => rand.Next()).Distinct().ToList();
+                // Use active killer perks if available, otherwise use the default killer perks
+                List<string> killerPerkPool = (activeKillerPerks != null && activeKillerPerks.Count > 0)
+                    ? activeKillerPerks
+                    : killerPerks.ToList();
+                List<string> shuffledPerks = killerPerkPool.OrderBy(x => rand.Next()).Distinct().ToList();
                 string[] selectedPerks = shuffledPerks.Take(4).ToArray();
 
                 // Initialize the index and timer
@@ -212,7 +215,7 @@ namespace DBDRandomiser
                     };
 
                     // Add the perk image
-                    if (killerPerkImages.TryGetValue(perk, out string perkImageUri))
+                    if (killerPerkImages.TryGetValue(perk, out var perkImageUri) && perkImageUri != null)
                     {
                         try
                         {
@@ -228,7 +231,6 @@ namespace DBDRandomiser
                         {
                             MessageBox.Show($"Error loading image for perk '{perk}': {ex.Message}");
                         }
-
                     }
 
                     // Add the perk text
@@ -281,8 +283,8 @@ namespace DBDRandomiser
             CharacterImage.Visibility = Visibility.Visible;
 
             // Trigger the FadeInStoryboard for each element
-            Storyboard fadeInStoryboard = this.Resources["FadeInStoryboard"] as Storyboard;
-            Storyboard fadeOutStoryboard = this.Resources["FadeOutStoryboard"] as Storyboard;
+            Storyboard? fadeInStoryboard = this.Resources["FadeInStoryboard"] as Storyboard;
+            Storyboard? fadeOutStoryboard = this.Resources["FadeOutStoryboard"] as Storyboard;
 
             if (fadeInStoryboard != null)
             {
@@ -299,7 +301,7 @@ namespace DBDRandomiser
                 {
                     background_image2.Opacity = 0;
                 }
-                else
+                else if (fadeOutStoryboard != null)
                 {
                     Storyboard.SetTarget(fadeOutStoryboard, background_image2);
                     fadeOutStoryboard.Begin();
@@ -352,8 +354,11 @@ namespace DBDRandomiser
 
             if (IncludePerksCheckBox.IsChecked == true)
             {
-                // Shuffle the perk list and pick the first four unique perks
-                List<string> shuffledPerks = survivorPerks.OrderBy(x => rand.Next()).Distinct().ToList();
+                // Use active survivor perks if available, otherwise use the default survivor perks
+                List<string> survivorPerkPool = (activeSurvivorPerks != null && activeSurvivorPerks.Count > 0)
+                    ? activeSurvivorPerks
+                    : survivorPerks.ToList();
+                List<string> shuffledPerks = survivorPerkPool.OrderBy(x => rand.Next()).Distinct().ToList();
                 string[] selectedPerks = shuffledPerks.Take(4).ToArray();
 
                 // Initialize the index and timer
@@ -382,7 +387,7 @@ namespace DBDRandomiser
                     };
 
                     // Add the perk image
-                    if (survivorPerkImages.TryGetValue(perk, out string perkImageUri))
+                    if (survivorPerkImages.TryGetValue(perk, out var perkImageUri) && perkImageUri != null)
                     {
                         try
                         {
@@ -398,7 +403,6 @@ namespace DBDRandomiser
                         {
                             MessageBox.Show($"Error loading image for perk '{perk}': {ex.Message}");
                         }
-
                     }
 
                     // Add the perk text
@@ -434,7 +438,7 @@ namespace DBDRandomiser
         private void ResetScreen_Click(object sender, RoutedEventArgs e)
         {
             // Retrieve the fade-out Storyboard from resources
-            Storyboard fadeOutStoryboard = this.Resources["FadeOutStoryboard"] as Storyboard;
+            Storyboard? fadeOutStoryboard = this.Resources["FadeOutStoryboard"] as Storyboard;
 
             if (fadeOutStoryboard != null)
             {

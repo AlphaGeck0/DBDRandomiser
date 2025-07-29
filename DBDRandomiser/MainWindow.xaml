@@ -54,10 +54,22 @@
         </Button>  
   
         <!-- Buttons (Placed at Bottom) -->  
-        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom">  
-            <Button Content="Select Random Killer" Click="SelectKiller_Click" Width="200" Background="OrangeRed" Foreground="White" FontWeight="Bold"/>  
-            <Button Content="Reset" Click="ResetScreen_Click" Width="100" Background="#AAAAAA" Foreground="Black" FontWeight="Bold"/>  
-            <Button Content="Select Random Survivor" Click="SelectSurvivor_Click" Width="200" Background="CornflowerBlue" Foreground="White" FontWeight="Bold"/>  
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom">
+            <Button Click="SelectKiller_Click" Width="200" Background="OrangeRed" Foreground="White" FontWeight="Bold" >
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="/Icons/KillerIcon.png" Width="20" Height="20" ></Image>
+                    <TextBlock Padding="5,0,0,0" Height="20">Select Random Killer</TextBlock>
+                </StackPanel>
+            </Button>
+            <Button Click="ResetScreen_Click" Width="100" Background="#AAAAAA" Foreground="Black" FontWeight="Bold">
+                <TextBlock Padding="0,0,0,0" Height="20">Reset</TextBlock>
+            </Button>
+            <Button Click="SelectSurvivor_Click" Width="200" Background="CornflowerBlue" Foreground="White" FontWeight="Bold">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Padding="0,0,5,0" Height="20">Select Random Survivor</TextBlock>
+                    <Image Source="/Icons/Survivor_Icon.png" Width="20" Height="20" ></Image>
+                </StackPanel>
+            </Button>  
         </StackPanel>  
     </Grid>  
 </Window>

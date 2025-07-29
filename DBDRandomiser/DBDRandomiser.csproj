@@ -321,6 +321,7 @@
     <Content Remove="perk_images\survivor_perks\Aftercare.png" />
     <Content Remove="perk_images\survivor_perks\Alert.png" />
     <Content Remove="perk_images\survivor_perks\Any_Means_Necessary.png" />
+    <Content Remove="perk_images\survivor_perks\Apocalyptic_Ingenuity.png" />
     <Content Remove="perk_images\survivor_perks\Appraisal.png" />
     <Content Remove="perk_images\survivor_perks\Autodidact.png" />
     <Content Remove="perk_images\survivor_perks\Babysitter.png" />
@@ -352,6 +353,8 @@
     <Content Remove="perk_images\survivor_perks\Chemical_Trap.png" />
     <Content Remove="perk_images\survivor_perks\Clairvoyance.png" />
     <Content Remove="perk_images\survivor_perks\Clean_Break.png" />
+    <Content Remove="perk_images\survivor_perks\Come_And_Get_Me.png" />
+    <Content Remove="perk_images\survivor_perks\Conviction.png" />
     <Content Remove="perk_images\survivor_perks\Corrective_Action.png" />
     <Content Remove="perk_images\survivor_perks\Counterforce.png" />
     <Content Remove="perk_images\survivor_perks\Cut_Loose.png" />
@@ -392,6 +395,7 @@
     <Content Remove="perk_images\survivor_perks\Invocation_Weaving_Spiders.png" />
     <Content Remove="perk_images\survivor_perks\Iron_Will.png" />
     <Content Remove="perk_images\survivor_perks\Kindred.png" />
+    <Content Remove="perk_images\survivor_perks\Last_Stand.png" />
     <Content Remove="perk_images\survivor_perks\Leader.png" />
     <Content Remove="perk_images\survivor_perks\Left_Behind.png" />
     <Content Remove="perk_images\survivor_perks\Light-Footed.png" />
@@ -454,6 +458,8 @@
     <Content Remove="perk_images\survivor_perks\Strength_in_Shadows.png" />
     <Content Remove="perk_images\survivor_perks\Teamwork_Collective_Stealth.png" />
     <Content Remove="perk_images\survivor_perks\Teamwork_Power_of_Two.png" />
+    <Content Remove="perk_images\survivor_perks\Teamwork_Throw_Down.png" />
+    <Content Remove="perk_images\survivor_perks\Teamwork_Toughen_Up.png" />
     <Content Remove="perk_images\survivor_perks\Technician.png" />
     <Content Remove="perk_images\survivor_perks\Tenacity.png" />
     <Content Remove="perk_images\survivor_perks\This_is_Not_Happening.png" />
@@ -489,8 +495,13 @@
 
   <ItemGroup>
     <None Remove="background_image\dbd_background.png" />
+    <None Remove="Icons\Claws.jpg" />
     <None Remove="Icons\dbd_rando.ico" />
+    <None Remove="Icons\Escape.png" />
+    <None Remove="Icons\Hook.png" />
+    <None Remove="Icons\KillerIcon.png" />
     <None Remove="Icons\Skull.png" />
+    <None Remove="Icons\Survivor_Icon.png" />
     <None Remove="killer_images\the_artist.png" />
     <None Remove="killer_images\the_blight.png" />
     <None Remove="killer_images\the_cannibal.png" />
@@ -688,6 +699,7 @@
     <None Remove="survivor_images\Laurie_Strode.png" />
     <None Remove="survivor_images\Leon_Scott_Kennedy.png" />
     <None Remove="survivor_images\Meg_Thomas.png" />
+    <None Remove="survivor_images\Michonne_Grimes.png" />
     <None Remove="survivor_images\Mikaela_Reid.png" />
     <None Remove="survivor_images\Nancy_Wheeler.png" />
     <None Remove="survivor_images\Nea_Karlsson.png" />
@@ -696,6 +708,7 @@
     <None Remove="survivor_images\Quentin_Smith.png" />
     <None Remove="survivor_images\Rebecca_Chambers.png" />
     <None Remove="survivor_images\Renato_Lyra.png" />
+    <None Remove="survivor_images\Rick_Grimes.png" />
     <None Remove="survivor_images\Sable_Ward.png" />
     <None Remove="survivor_images\Steve_Harrington.png" />
     <None Remove="survivor_images\Taurie_Cain.png" />
@@ -717,11 +730,26 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="background_image\dbd_background2.xcf" />
+    <Resource Include="Icons\Claws.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Icons\dbd_rando.ico">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Icons\Escape.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Icons\Hook.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Icons\KillerIcon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Icons\Skull.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Icons\Survivor_Icon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
     <Resource Include="killer_images\The_Animatronic.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -1257,6 +1285,9 @@
     <Resource Include="perk_images\survivor_perks\Any_Means_Necessary.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="perk_images\survivor_perks\Apocalyptic_Ingenuity.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="perk_images\survivor_perks\Appraisal.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
@@ -1348,6 +1379,12 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="perk_images\survivor_perks\Clean_Break.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Come_And_Get_Me.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Conviction.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="perk_images\survivor_perks\Corrective_Action.png">
@@ -1468,6 +1505,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="perk_images\survivor_perks\Kindred.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Last_Stand.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="perk_images\survivor_perks\Leader.png">
@@ -1653,6 +1693,12 @@
     <Resource Include="perk_images\survivor_perks\Teamwork_Power_of_Two.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="perk_images\survivor_perks\Teamwork_Throw_Down.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="perk_images\survivor_perks\Teamwork_Toughen_Up.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="perk_images\survivor_perks\Technician.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
@@ -1785,6 +1831,9 @@
     <Resource Include="survivor_images\Meg_Thomas.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="survivor_images\Michonne_Grimes.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="survivor_images\Mikaela_Reid.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
@@ -1807,6 +1856,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="survivor_images\Renato_Lyra.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="survivor_images\Rick_Grimes.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="survivor_images\Sable_Ward.png">

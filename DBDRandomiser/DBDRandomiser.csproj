@@ -499,6 +499,7 @@
     <None Remove="Icons\dbd_rando.ico" />
     <None Remove="Icons\Escape.png" />
     <None Remove="Icons\Hook.png" />
+    <None Remove="Icons\Info_Icon.png" />
     <None Remove="Icons\KillerIcon.png" />
     <None Remove="Icons\Skull.png" />
     <None Remove="Icons\Survivor_Icon.png" />
@@ -740,6 +741,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Icons\Hook.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Icons\Info_Icon.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Icons\KillerIcon.png">

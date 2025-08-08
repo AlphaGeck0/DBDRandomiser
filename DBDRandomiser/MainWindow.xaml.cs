@@ -1,43 +1,61 @@
 ﻿using System;
-using System.Globalization;
-using System.Text;
-using System.Windows;
-using System.Windows.Media.Imaging;
-using System.IO;
-using System.Windows.Controls;
-using System.Windows.Input; // Required for mouse events
-using System.Windows.Media.Animation;
-using System.Windows.Controls.Primitives; // Add this for ViewBox
-using System.Linq;
 using System.Diagnostics.Eventing.Reader; // Added for LINQ (used in shuffling)
+using System.Globalization;
+using System.IO;
+using System.Linq;
+using System.Text;
 using System.Text.Json;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Controls.Primitives; // Add this for ViewBox
+using System.Windows.Input; // Required for mouse events
+using System.Windows.Media;
+using System.Windows.Media.Animation;
+using System.Windows.Media.Imaging;
 
 namespace DBDRandomiser
 {
     public partial class MainWindow : Window
     {
+        #region Fields
+
+        // --- Character Data Sources ---
+        // Arrays and dictionaries holding all available killers, survivors, and their perks/images.
         private string[] killers = Killers.List;
         private string[] killerPerks = KillerPerks.List;
         private Dictionary<string, string> killerPerkImages = KillerPerkImages.KillerMap;
-
-
         private string[] survivors = Survivors.List;
         private string[] survivorPerks = SurvivorPerks.List;
         private Dictionary<string, string> survivorPerkImages = SurvivorPerkImages.SurvivorMap;
+        private string version = "4.1";
 
-        // Declare timer and index as class-level fields
+        // --- UI Animation State ---
+        // Timer and index for sequentially revealing perks with animation.
         private System.Windows.Threading.DispatcherTimer? timer;
         private int index;
 
+        // --- User Selections ---
+        // Lists tracking which killers, survivors, and perks are currently active/selected by the user.
         private List<string>? activeSurvivors;
         private List<string>? activeKillers;
-
         private List<string>? activeSurvivorPerks;
         private List<string>? activeKillerPerks;
 
+        #endregion
+
+        #region File Paths
+
+        // --- File Path for User Selections ---
+        // Used to persist user choices between sessions.
         private static string SelectionFilePath =>
     Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "DBDRandomiser", "user_selections.json");
 
+        #endregion
+
+        #region Persistence
+
+        // --- Save and Load User Selections ---
+        // Handles reading and writing user selection data to disk.
         private void SaveUserSelections()
         {
             var selection = new CharacterSelection
@@ -70,6 +88,12 @@ namespace DBDRandomiser
             }
         }
 
+        #endregion
+
+        #region Constructor
+
+        // --- Window Initialization ---
+        // Loads user selections and ensures the window is visible and active.
         public MainWindow()
         {
             InitializeComponent();
@@ -81,6 +105,12 @@ namespace DBDRandomiser
             this.Activate();
         }
 
+        #endregion
+
+        #region Utility Methods
+
+        // --- String Utility ---
+        // Removes diacritics from character names for file path compatibility.
         private static string RemoveDiacritics(string text)
         {
             var normalized = text.Normalize(NormalizationForm.FormD);
@@ -93,24 +123,155 @@ namespace DBDRandomiser
             return sb.ToString().Normalize(NormalizationForm.FormC);
         }
 
-        private void SelectKiller_Click(object sender, RoutedEventArgs e)
+        // --- UI Helpers ---
+        // Resets the timer used for perk animations.
+        private void ResetTimer()
         {
-            // Stop and reset the timer if it's already running
             if (timer != null && timer.IsEnabled)
             {
                 timer.Stop();
                 timer = null;
             }
+        }
 
-            // Ensure the CharacterName and PerksContainer are visible
+        // Sets the initial state for character UI elements before animation.
+        private void ShowCharacterUI()
+        {
             CharacterName.Opacity = 0;
             CharacterName.Visibility = Visibility.Visible;
-
             PerksContainer.Opacity = 0;
             PerksContainer.Visibility = Visibility.Visible;
-
             CharacterImage.Opacity = 0;
             CharacterImage.Visibility = Visibility.Visible;
+        }
+
+        private void ShowPerks(Dictionary<string, string> perkImages, List<string> perkPool)
+        {
+            Random rand = new Random();
+            List<string> shuffledPerks = perkPool.OrderBy(x => rand.Next()).Distinct().ToList();
+            string[] selectedPerks = shuffledPerks.Take(4).ToArray();
+
+            index = 0;
+            timer = new System.Windows.Threading.DispatcherTimer
+            {
+                Interval = TimeSpan.FromMilliseconds(1000)
+            };
+
+            timer.Tick += (s, args) =>
+            {
+                if (index >= selectedPerks.Length)
+                {
+                    timer.Stop();
+                    return;
+                }
+
+                string perk = selectedPerks[index];
+
+                StackPanel perkPanel = new StackPanel
+                {
+                    Orientation = Orientation.Vertical,
+                    Margin = new Thickness(15, 0, 15, 0),
+                    Opacity = 0
+                };
+
+                if (perkImages.TryGetValue(perk, out var perkImageUri) && perkImageUri != null)
+                {
+                    try
+                    {
+                        Image perkImage = new Image
+                        {
+                            Source = new BitmapImage(new Uri(perkImageUri, UriKind.Absolute)),
+                            Height = 50,
+                            Margin = new Thickness(0, 0, 0, 5)
+                        };
+                        perkPanel.Children.Add(perkImage);
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show($"Error loading image for perk '{perk}': {ex.Message}");
+                    }
+                }
+
+                TextBlock perkText = new TextBlock
+                {
+                    Text = perk,
+                    Foreground = System.Windows.Media.Brushes.White,
+                    FontSize = 15,
+                    TextAlignment = TextAlignment.Center,
+                    TextWrapping = TextWrapping.Wrap,
+                };
+                perkPanel.Children.Add(perkText);
+
+                PerksContainer.Children.Add(perkPanel);
+
+                var fadeInAnimation = new DoubleAnimation
+                {
+                    From = 0.0,
+                    To = 1.0,
+                    Duration = TimeSpan.FromMilliseconds(500)
+                };
+                perkPanel.BeginAnimation(OpacityProperty, fadeInAnimation);
+
+                index++;
+            };
+
+            timer.Start();
+        }
+
+        //private StackPanel CreateUI(string imagePath, string username)
+        //{
+        //    StackPanel userStack = new StackPanel()
+        //    {
+        //        Orientation = System.Windows.Controls.Orientation.Horizontal,
+        //        HorizontalAlignment = System.Windows.HorizontalAlignment.Left,
+        //        Margin = new Thickness(36, 24, 0, 0)
+        //    };
+
+        //    Image profilePic = new Image()
+        //    {
+        //        Source = new BitmapImage(new Uri(imagePath, UriKind.Absolute)),
+        //        Name = "imgProfile",
+        //        Height = 100,
+        //        Width = 100,
+        //        Margin = new Thickness(0, 0, 6, 0)
+        //    };
+
+        //    TextBlock userName = new TextBlock()
+        //    {
+        //        Text = username,
+        //        Name = "txblkUserName",
+        //        Foreground = new SolidColorBrush(Colors.White),
+        //        FontSize = 32,
+        //        Margin = new Thickness(0, 12, 0, 0)
+        //    };
+
+
+        //    userStack.Children.Add(profilePic);
+        //    userStack.Children.Add(userName);
+        //    return userStack;
+        //}
+
+        #endregion
+
+        #region Event Handlers
+
+        // --- Button and UI Event Handlers ---
+        // Handles all user interactions from the UI.
+        private void SelectKillerSurvivor_Click(object sender, RoutedEventArgs e)
+        {
+            var rand = new Random();
+            if (rand.Next(2) == 0)
+                SelectKiller_Click(sender, e);
+            else
+                SelectSurvivor_Click(sender, e);
+        }
+
+        private void SelectKiller_Click(object sender, RoutedEventArgs e)
+        {
+            // Stop and reset the timer if it's already running
+            ResetTimer();
+
+            ShowCharacterUI();
 
             // Trigger the FadeInStoryboard for each element
             Storyboard? fadeInStoryboard = this.Resources["FadeInStoryboard"] as Storyboard;
@@ -154,9 +315,7 @@ namespace DBDRandomiser
             try
             {
                 CharacterImage.Source = new BitmapImage(new Uri(CharacterImageUri, UriKind.Absolute));
-                CharacterImage.Opacity = 1; // Ensure the image is visible
-
-                // Apply a fade-in animation to the CharacterImage
+                CharacterImage.Opacity = 1;
                 var fadeInAnimation = new DoubleAnimation
                 {
                     From = 0.0,
@@ -169,118 +328,19 @@ namespace DBDRandomiser
             {
                 MessageBox.Show($"Error loading killer image: {ex.Message}");
             }
+
             PerksContainer.Opacity = 1; // Ensure the perks container is visible
 
-            try
-            {
-                CharacterImage.Source = new BitmapImage(new Uri(CharacterImageUri, UriKind.Absolute));
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Error loading killer image: {ex.Message}");
-            }
-
             if (IncludePerksCheckBox.IsChecked == true)
-            {
-                // Use active killer perks if available, otherwise use the default killer perks
-                List<string> killerPerkPool = (activeKillerPerks != null && activeKillerPerks.Count > 0)
-                    ? activeKillerPerks
-                    : killerPerks.ToList();
-                List<string> shuffledPerks = killerPerkPool.OrderBy(x => rand.Next()).Distinct().ToList();
-                string[] selectedPerks = shuffledPerks.Take(4).ToArray();
-
-                // Initialize the index and timer
-                index = 0;
-                timer = new System.Windows.Threading.DispatcherTimer
-                {
-                    Interval = TimeSpan.FromMilliseconds(1000) // Delay between each perk
-                };
-
-                timer.Tick += (s, args) =>
-                {
-                    if (index >= selectedPerks.Length)
-                    {
-                        timer.Stop(); // Stop the timer when all perks are added
-                        return;
-                    }
-
-                    string perk = selectedPerks[index];
-
-                    // Create a StackPanel to hold the image and text
-                    StackPanel perkPanel = new StackPanel
-                    {
-                        Orientation = Orientation.Vertical,
-                        Margin = new Thickness(15, 0, 15, 0), // Adds spacing between perks
-                        Opacity = 0 // Start with 0 opacity for fade-in animation
-                    };
-
-                    // Add the perk image
-                    if (killerPerkImages.TryGetValue(perk, out var perkImageUri) && perkImageUri != null)
-                    {
-                        try
-                        {
-                            Image perkImage = new Image
-                            {
-                                Source = new BitmapImage(new Uri(perkImageUri, UriKind.Absolute)),
-                                Height = 50,
-                                Margin = new Thickness(0, 0, 0, 5)
-                            };
-                            perkPanel.Children.Add(perkImage);
-                        }
-                        catch (Exception ex)
-                        {
-                            MessageBox.Show($"Error loading image for perk '{perk}': {ex.Message}");
-                        }
-                    }
-
-                    // Add the perk text
-                    TextBlock perkText = new TextBlock
-                    {
-                        Text = perk,
-                        Foreground = System.Windows.Media.Brushes.White,
-                        FontSize = 15,
-                        TextAlignment = TextAlignment.Center,
-                        TextWrapping = TextWrapping.Wrap,
-                    };
-                    perkPanel.Children.Add(perkText);
-
-                    // Add the StackPanel to the PerksContainer
-                    PerksContainer.Children.Add(perkPanel);
-
-                    // Apply a fade-in animation to the perk
-                    var fadeInAnimation = new DoubleAnimation
-                    {
-                        From = 0.0,
-                        To = 1.0,
-                        Duration = TimeSpan.FromMilliseconds(500)
-                    };
-                    perkPanel.BeginAnimation(OpacityProperty, fadeInAnimation);
-
-                    index++; // Move to the next perk
-                };
-
-                timer.Start(); // Start the timer
-            }
+                ShowPerks(killerPerkImages, activeKillerPerks ?? killerPerks.ToList());
         }
 
         private void SelectSurvivor_Click(object sender, RoutedEventArgs e)
         {
             // Stop and reset the timer if it's already running
-            if (timer != null && timer.IsEnabled)
-            {
-                timer.Stop();
-                timer = null;
-            }
+            ResetTimer();
 
-            // Ensure the CharacterName and PerksContainer are visible
-            CharacterName.Opacity = 0;
-            CharacterName.Visibility = Visibility.Visible;
-
-            PerksContainer.Opacity = 0;
-            PerksContainer.Visibility = Visibility.Visible;
-
-            CharacterImage.Opacity = 0;
-            CharacterImage.Visibility = Visibility.Visible;
+            ShowCharacterUI();
 
             // Trigger the FadeInStoryboard for each element
             Storyboard? fadeInStoryboard = this.Resources["FadeInStoryboard"] as Storyboard;
@@ -343,96 +403,8 @@ namespace DBDRandomiser
             }
             PerksContainer.Opacity = 1; // Ensure the perks container is visible
 
-            try
-            {
-                CharacterImage.Source = new BitmapImage(new Uri(CharacterImageUri, UriKind.Absolute));
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Error loading survivor image: {ex.Message}");
-            }
-
             if (IncludePerksCheckBox.IsChecked == true)
-            {
-                // Use active survivor perks if available, otherwise use the default survivor perks
-                List<string> survivorPerkPool = (activeSurvivorPerks != null && activeSurvivorPerks.Count > 0)
-                    ? activeSurvivorPerks
-                    : survivorPerks.ToList();
-                List<string> shuffledPerks = survivorPerkPool.OrderBy(x => rand.Next()).Distinct().ToList();
-                string[] selectedPerks = shuffledPerks.Take(4).ToArray();
-
-                // Initialize the index and timer
-                index = 0;
-                timer = new System.Windows.Threading.DispatcherTimer
-                {
-                    Interval = TimeSpan.FromMilliseconds(1000) // Delay between each perk
-                };
-
-                timer.Tick += (s, args) =>
-                {
-                    if (index >= selectedPerks.Length)
-                    {
-                        timer.Stop(); // Stop the timer when all perks are added
-                        return;
-                    }
-
-                    string perk = selectedPerks[index];
-
-                    // Create a StackPanel to hold the image and text
-                    StackPanel perkPanel = new StackPanel
-                    {
-                        Orientation = Orientation.Vertical,
-                        Margin = new Thickness(15, 0, 15, 0), // Adds spacing between perks
-                        Opacity = 0 // Start with 0 opacity for fade-in animation
-                    };
-
-                    // Add the perk image
-                    if (survivorPerkImages.TryGetValue(perk, out var perkImageUri) && perkImageUri != null)
-                    {
-                        try
-                        {
-                            Image perkImage = new Image
-                            {
-                                Source = new BitmapImage(new Uri(perkImageUri, UriKind.Absolute)),
-                                Height = 50,
-                                Margin = new Thickness(0, 0, 0, 5)
-                            };
-                            perkPanel.Children.Add(perkImage);
-                        }
-                        catch (Exception ex)
-                        {
-                            MessageBox.Show($"Error loading image for perk '{perk}': {ex.Message}");
-                        }
-                    }
-
-                    // Add the perk text
-                    TextBlock perkText = new TextBlock
-                    {
-                        Text = perk,
-                        Foreground = System.Windows.Media.Brushes.White,
-                        FontSize = 15,
-                        TextAlignment = TextAlignment.Center,
-                        TextWrapping = TextWrapping.Wrap,
-                    };
-                    perkPanel.Children.Add(perkText);
-
-                    // Add the StackPanel to the PerksContainer
-                    PerksContainer.Children.Add(perkPanel);
-
-                    // Apply a fade-in animation to the perk
-                    var fadeInAnimation = new DoubleAnimation
-                    {
-                        From = 0.0,
-                        To = 1.0,
-                        Duration = TimeSpan.FromMilliseconds(500)
-                    };
-                    perkPanel.BeginAnimation(OpacityProperty, fadeInAnimation);
-
-                    index++; // Move to the next perk
-                };
-
-                timer.Start(); // Start the timer
-            }
+                ShowPerks(survivorPerkImages, activeSurvivorPerks ?? survivorPerks.ToList());
         }
 
         private void ResetScreen_Click(object sender, RoutedEventArgs e)
@@ -512,6 +484,18 @@ namespace DBDRandomiser
             OpenSelectionWindow();
         }
 
+        private void Info_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("DBD Randomiser " + version + "\n\n" +
+                            "This application allows you to randomly select characters and perks from Dead by Daylight.\n" +
+                            "You can customize your selections and save them for future use.\n\n" +
+                            "Developed by AlphaGecko\n" +
+                            "For more information, contact me @ twitch.tv/alphageck0.", "About DBD Randomiser", MessageBoxButton.OK, MessageBoxImage.Information);
+            {
+            }
+        }
+
+
         private void OpenSelectionWindow()
         {
             var selectionWindow = new SelectionWindow(
@@ -533,5 +517,6 @@ namespace DBDRandomiser
                 SaveUserSelections();
             }
         }
+        #endregion
     }
 }

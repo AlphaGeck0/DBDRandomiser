@@ -1,7 +1,10 @@
 ﻿<Window  
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"  
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"  
-      xmlns:av="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="av" x:Class="DBDRandomiser.MainWindow"  
+      xmlns:av="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      mc:Ignorable="av" 
+      x:Class="DBDRandomiser.MainWindow"  
       Title="DBD Killer Selector"  
       Height="800" Width="800"  
       WindowStyle="None" ResizeMode="NoResize"  
@@ -24,52 +27,81 @@
         <!-- Background Image -->  
         <Image x:Name="background_image2" Source="/background_image/dbd_background2.png" Stretch="Fill" Opacity="0"/>  
   
-        <!-- Include Perks Toggle -->  
-        <CheckBox x:Name="IncludePerksCheckBox" Content="Include Perks" IsChecked="False" Margin="1,763,655,-13" Foreground="White"   
-                  FontSize="18" VerticalContentAlignment="Center" IsEnabled="True" Panel.ZIndex="99"/>  
-  
-        <!-- Killer Name (Lowered & Enlarged) -->  
+        <!-- Include Perks Toggle -->
+        <CheckBox x:Name="IncludePerksCheckBox" Content="Include Perks" IsChecked="False" Margin="0,38,656,712" Foreground="White"   
+                  FontSize="20" VerticalContentAlignment="Center" IsEnabled="True" Panel.ZIndex="99">
+            <CheckBox.LayoutTransform>
+                <ScaleTransform ScaleX="0.65" ScaleY="0.65"/>
+            </CheckBox.LayoutTransform>
+        </CheckBox>
+
+        <!-- Character Name (Lowered & Enlarged) -->  
         <TextBlock x:Name="CharacterName" Foreground="Red" FontSize="44"  
                  HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,150,0,0" Opacity="0" Panel.ZIndex="99"/>  
   
-        <!-- Killer Image (Centered) -->  
+        <!-- Character Image (Centered) -->  
         <Image x:Name="CharacterImage" HorizontalAlignment="Center" VerticalAlignment="Center" Height="400" Opacity="0"/>  
   
         <!-- Perks Container -->  
         <UniformGrid x:Name="PerksContainer"  Margin="0,590,0,90" Width="800" Rows="1" Columns="4" Opacity="0" RenderTransformOrigin="0.499,0.383" />  
   
         <!-- Close app button -->  
-        <Button Width="100" Click="CloseApp_Click" Background="DarkRed" BorderBrush="Crimson" BorderThickness="2" Margin="700,0,0,770" Height="30">  
+        <Button Width="70" Click="CloseApp_Click" Background="DarkRed" BorderBrush="Crimson" BorderThickness="2" Margin="730,0,0,750" Height="50">  
             <StackPanel Orientation="Horizontal">  
-                <Image Source="/icons/Skull.png" Width="20" Height="20" />  
-                <TextBlock Text="Close App" Foreground="White" FontWeight="Bold" Margin="5,0,0,0"/>  
+                <Image Source="/icons/Skull.png" Width="20" Height="20" />
+                <TextBlock Foreground="White" FontWeight="Bold" Margin="5,0,0,0">
+                    Close <LineBreak/> App
+                </TextBlock>
             </StackPanel>  
-        </Button>  
-  
-        <!-- Character Selection Button button -->  
-        <Button Width="170" Height="30" Click="Character_Click"  Background="DimGray" BorderBrush="DarkGray" BorderThickness="2" Margin="-630,0,0,770" >  
-            <StackPanel Orientation="Horizontal">  
-                <TextBlock Text="Character &amp; Perk Selection" Foreground="White" FontWeight="Bold" Margin="5,0,0,0"/>  
-            </StackPanel>  
-        </Button>  
-  
-        <!-- Buttons (Placed at Bottom) -->  
+        </Button>
+
+        <!-- Reset Screen button -->
+        <Button Click="ResetScreen_Click" Width="70" Background="DarkGray" BorderBrush="Gray" BorderThickness="2" Foreground="White" FontWeight="Bold" Margin="590,0,0,750"  Height="50" >
+            <TextBlock Padding="0,0,0,0">
+                Reset <LineBreak/> Screen
+            </TextBlock>
+        </Button>
+
+        <!-- Character Selection Button button -->
+        <Button Width="100" Height="50" Click="Character_Click"  Background="DimGray" BorderBrush="DarkGray" BorderThickness="2" Margin="-700,0,0,750" >
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Foreground="White" FontWeight="Bold" Margin="5,0,0,0">
+                    Character &amp;<LineBreak/> Perk Selection
+                </TextBlock>
+            </StackPanel>
+        </Button>
+
+        <!-- Buttons at the bottom of the screen-->
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom">
-            <Button Click="SelectKiller_Click" Width="200" Background="OrangeRed" Foreground="White" FontWeight="Bold" >
+            <!-- Killer Button-->
+                <Button Click="SelectKiller_Click" Width="200" Background="OrangeRed" Foreground="White" FontWeight="Bold"  Height="20" >
                 <StackPanel Orientation="Horizontal">
                     <Image Source="/Icons/KillerIcon.png" Width="20" Height="20" ></Image>
                     <TextBlock Padding="5,0,0,0" Height="20">Select Random Killer</TextBlock>
                 </StackPanel>
             </Button>
-            <Button Click="ResetScreen_Click" Width="100" Background="#AAAAAA" Foreground="Black" FontWeight="Bold">
-                <TextBlock Padding="0,0,0,0" Height="20">Reset</TextBlock>
+            <!-- Killer/Survivor Button-->
+            <Button Click="SelectKillerSurvivor_Click" Width="200" Foreground="White" FontWeight="Bold" Height="20" >
+                <Button.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                        <GradientStop Color="OrangeRed" Offset="0"/>
+                        <GradientStop Color="CornflowerBlue" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Padding="5,0,0,0" Height="20">Random Killer/Survivor Selection</TextBlock>
+                </StackPanel>
             </Button>
-            <Button Click="SelectSurvivor_Click" Width="200" Background="CornflowerBlue" Foreground="White" FontWeight="Bold">
+            <!-- Survivor Button-->
+            <Button Click="SelectSurvivor_Click" Width="200" Background="CornflowerBlue" Foreground="White" FontWeight="Bold"  Height="20" >
                 <StackPanel Orientation="Horizontal">
                     <TextBlock Padding="0,0,5,0" Height="20">Select Random Survivor</TextBlock>
                     <Image Source="/Icons/Survivor_Icon.png" Width="20" Height="20" ></Image>
                 </StackPanel>
             </Button>  
-        </StackPanel>  
+        </StackPanel>
+
+        <Image Source="/Icons/Info_Icon.png" MouseDown="Info_Click" RenderTransformOrigin="-0.755,-4.023" Margin="751,53,0,694"/>
+
     </Grid>  
 </Window>

@@ -1,4 +1,5 @@
-﻿<!-- SelectionWindow.xaml -->
+﻿
+    <!-- SelectionWindow.xaml -->
 <Window x:Class="DBDRandomiser.SelectionWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
